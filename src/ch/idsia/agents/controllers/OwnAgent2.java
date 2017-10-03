@@ -28,7 +28,9 @@
 package ch.idsia.agents.controllers;
 
 import ch.idsia.agents.Agent;
+import ch.idsia.benchmark.mario.engine.GeneralizerLevelScene;
 import ch.idsia.benchmark.mario.engine.sprites.Mario;
+import ch.idsia.benchmark.mario.engine.sprites.Sprite;
 import ch.idsia.benchmark.mario.environments.Environment;
 
 import java.util.Random;
@@ -55,9 +57,38 @@ public class OwnAgent2 extends BasicMarioAIAgent implements Agent {
     }
 
     public boolean[] getAction() {
-        Random R = new Random();
-        action[Mario.KEY_DOWN] = R.nextBoolean();
+        action[Mario.KEY_SPEED] = isMarioAbleToShoot;
+
+        if ((isObstacle(marioEgoRow, marioEgoCol + 1)
+                || isEnemies(marioEgoRow, marioEgoCol)
+                || isHole(marioEgoRow, marioEgoCol))
+                ) {
+            action[Mario.KEY_JUMP] = isMarioAbleToJump || !isMarioOnGround;
+        }
 
         return action;
     }
+
+    private boolean isObstacle(int r, int c) {
+        return getReceptiveFieldCellValue(r, c) == GeneralizerLevelScene.BRICK
+                || getReceptiveFieldCellValue(r, c) == GeneralizerLevelScene.BORDER_CANNOT_PASS_THROUGH
+                || getReceptiveFieldCellValue(r, c + 1) == GeneralizerLevelScene.BORDER_CANNOT_PASS_THROUGH
+                || getReceptiveFieldCellValue(r, c) == GeneralizerLevelScene.FLOWER_POT_OR_CANNON
+                || getReceptiveFieldCellValue(r, c + 1) == GeneralizerLevelScene.FLOWER_POT_OR_CANNON
+                || getReceptiveFieldCellValue(r, c) == GeneralizerLevelScene.LADDER;
+    }
+
+    private boolean isEnemies(int r, int c) {
+        return getEnemiesCellValue(r, c + 2) != Sprite.KIND_NONE
+                || getEnemiesCellValue(r, c + 1) != Sprite.KIND_NONE;
+    }
+
+    private boolean isHole(int r, int c) {
+        return getReceptiveFieldCellValue(r + 1, c + 1) == 0
+                && getReceptiveFieldCellValue(r + 2, c + 1) == 0
+                && getReceptiveFieldCellValue(r + 1, c + 2) == 0
+                && getReceptiveFieldCellValue(r + 2, c + 2) == 0;
+    }
+
+
 }
