@@ -28,7 +28,7 @@
 package ch.idsia.scenarios;
 
 import ch.idsia.agents.AgentsPool;
-import ch.idsia.agents.controllers.OwnAgent2;
+import ch.idsia.agents.controllers.OwnAgentTask3;
 import ch.idsia.benchmark.tasks.BasicTask;
 import ch.idsia.tools.MarioAIOptions;
 import ch.idsia.agents.Agent;
@@ -41,12 +41,12 @@ public final class MainTask3 {
     public static void main(String[] args) {
         final MarioAIOptions marioAIOptions = new MarioAIOptions(args);
 
-//        final Agent agent = new OwnAgent2();
-        AgentsPool.addAgent(AgentsPool.loadAgent("LearningWithGA-2017-10-05_14-29-24.xml", false));
-        Agent agent = AgentsPool.getCurrentAgent();
+        final Agent agent = new OwnAgentTask3();
+//        AgentsPool.addAgent(AgentsPool.loadAgent("LearningWithGA-2017-10-05_14-29-24.xml", false));
+//        Agent agent = AgentsPool.getCurrentAgent();
 
         marioAIOptions.setAgent(agent);
-
+        marioAIOptions.setFPS(15);
         marioAIOptions.setArgs("-lhs off -ltb on -lg off -lb off -ld 1 -ls 0 -le g");
 
         final BasicTask basicTask = new BasicTask(marioAIOptions);
