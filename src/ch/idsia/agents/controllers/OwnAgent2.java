@@ -45,8 +45,6 @@ import java.util.Random;
 public class OwnAgent2 extends BasicMarioAIAgent implements Agent {
     int trueJumpCounter = 0;
     int trueSpeedCounter = 0;
-    private int judgeCount = 0;
-    private boolean judge = false;
 
     public OwnAgent2() {
         super("OwnAgent");
@@ -60,14 +58,12 @@ public class OwnAgent2 extends BasicMarioAIAgent implements Agent {
     }
 
     public boolean[] getAction() {
+
         action[Mario.KEY_SPEED] = isMarioAbleToShoot;
 
-
-
-        if ((isObstacle(marioEgoRow, marioEgoCol + 1)
+        if (isObstacle(marioEgoRow, marioEgoCol + 1)
                 || isEnemies(marioEgoRow, marioEgoCol)
-                || isHole(marioEgoRow, marioEgoCol))
-
+                || isHole(marioEgoRow, marioEgoCol)
                 ) {
             action[Mario.KEY_JUMP] = isMarioAbleToJump || !isMarioOnGround;
         }
@@ -95,40 +91,4 @@ public class OwnAgent2 extends BasicMarioAIAgent implements Agent {
                 && getReceptiveFieldCellValue(r + 1, c + 2) == 0
                 && getReceptiveFieldCellValue(r + 2, c + 2) == 0;
     }
-
-    private boolean isAbleJump1(int r, int c) {
-        //  障害物の先に穴があるかどうかを判定
-        boolean judge = true;
-        if (isMarioOnGround
-                && getReceptiveFieldCellValue(r, c + 1) != 0
-                && getReceptiveFieldCellValue(r + 1, c + 2) == 0
-                && getReceptiveFieldCellValue(r + 2, c + 2) == 0
-                ) {
-            judge = false;
-        }
-        return judge;
-    }
-
-    private boolean isAbleJump2(int r, int c) {
-        // 着地先に穴があるかどうかを判定
-        boolean judge = true;
-        if (isMarioOnGround
-                && getReceptiveFieldCellValue(r, c+1) == 0
-                && getReceptiveFieldCellValue(r+1, c+6) == 0
-                && getReceptiveFieldCellValue(r+2, c+6) == 0
-                && getReceptiveFieldCellValue(r+3, c+6) == 0
-                && getReceptiveFieldCellValue(r+4, c+6) == 0
-                && getReceptiveFieldCellValue(r+5, c+6) == 0
-                && getReceptiveFieldCellValue(r+1, c+7) == 0
-                && getReceptiveFieldCellValue(r+2, c+7) == 0
-                && getReceptiveFieldCellValue(r+3, c+7) == 0
-                && getReceptiveFieldCellValue(r+4, c+7) == 0
-                && getReceptiveFieldCellValue(r+5, c+7) == 0
-                ) {
-            judge = false;
-        }
-        return judge;
-    }
-
-
 }

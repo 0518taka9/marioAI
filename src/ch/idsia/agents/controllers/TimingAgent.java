@@ -36,47 +36,40 @@ import ch.idsia.agents.Agent;
  * Time: 6:41:42 PM
  */
 
-public class TimingAgent extends BasicMarioAIAgent implements Agent
-{
-private Agent agent;
-private long timeTaken = 0;
-private int actionsPerformed = 0;
+public class TimingAgent extends BasicMarioAIAgent implements Agent {
+    private Agent agent;
+    private long timeTaken = 0;
+    private int actionsPerformed = 0;
 
-public TimingAgent(Agent agent)
-{
-    super("TimingAgent");
-    this.agent = agent;
-}
+    public TimingAgent(Agent agent) {
+        super("TimingAgent");
+        this.agent = agent;
+    }
 
-public boolean[] getAction()
-{
-    long start = System.currentTimeMillis();
-    boolean[] action = agent.getAction();
-    timeTaken += (System.currentTimeMillis() - start);
-    actionsPerformed++;
-    return action;
-}
+    public boolean[] getAction() {
+        long start = System.currentTimeMillis();
+        boolean[] action = agent.getAction();
+        timeTaken += (System.currentTimeMillis() - start);
+        actionsPerformed++;
+        return action;
+    }
 
-public void reset()
-{
-    agent.reset();
-}
+    public void reset() {
+        agent.reset();
+    }
 
-public String getName()
-{
-    return agent.getName();
-}
+    public String getName() {
+        return agent.getName();
+    }
 
-public void setName(String name)
-{
-    agent.setName(name);
-}
+//    public void setName(String name) {
+//        agent.setName(name);
+//    }
 
-public double averageTimeTaken()
-{
-    double average = ((double) timeTaken) / actionsPerformed;
-    timeTaken = 0;
-    actionsPerformed = 0;
-    return average;
-}
+    public double averageTimeTaken() {
+        double average = ((double) timeTaken) / actionsPerformed;
+        timeTaken = 0;
+        actionsPerformed = 0;
+        return average;
+    }
 }

@@ -45,38 +45,34 @@ import ch.idsia.tools.MarioAIOptions;
  * Class used for agent evaluation in GamePlay track
  * http://www.marioai.org/gameplay-track
  */
-public final class GamePlayTrack
-{
-final static int numberOfLevels = 512;
-private static int killsSum = 0;
-private static float marioStatusSum = 0;
-private static int timeLeftSum = 0;
-private static int marioModeSum = 0;
-private static boolean detailedStats = false;
-private static MarioAIOptions marioAIOptions = new MarioAIOptions();
+public final class GamePlayTrack {
+    final static int numberOfLevels = 512;
+    private static int killsSum = 0;
+    private static float marioStatusSum = 0;
+    private static int timeLeftSum = 0;
+    private static int marioModeSum = 0;
+    private static boolean detailedStats = false;
+    private static MarioAIOptions marioAIOptions = new MarioAIOptions();
 
-public static void evaluateAgent(final Agent agent)
-{
-    final Task task = new GamePlayTask(marioAIOptions);
-    //marioAIOptions.setAgent(agent);
-    task.setOptionsAndReset(marioAIOptions);
-    System.out.println("Evaluating agent " + agent.getName() + " with seed " + marioAIOptions.getLevelRandSeed());
-    task.doEpisodes(numberOfLevels, false, 1);
-    task.printStatistics();
-}
+    public static void evaluateAgent(final Agent agent) {
+        final Task task = new GamePlayTask(marioAIOptions);
+        //marioAIOptions.setAgent(agent);
+        task.setOptionsAndReset(marioAIOptions);
+        System.out.println("Evaluating agent " + agent.getName() + " with seed " + marioAIOptions.getLevelRandSeed());
+        task.doEpisodes(numberOfLevels, false, 1);
+        task.printStatistics();
+    }
 
-public static void evaluateSubmissionZip(final String zipFileName)
-{
+    public static void evaluateSubmissionZip(final String zipFileName) {
 
-}
+    }
 
 
-public static void main(String[] args)
-{
-    marioAIOptions.setArgs(args);
-    evaluateAgent(marioAIOptions.getAgent());
-    System.exit(0);
-}
+    public static void main(String[] args) {
+        marioAIOptions.setArgs(args);
+        evaluateAgent(marioAIOptions.getAgent());
+        System.exit(0);
+    }
 }
 
 

@@ -3,6 +3,7 @@ package ch.idsia.agents;
 import java.util.Random;
 
 import ch.idsia.agents.controllers.BasicMarioAIAgent;
+import ch.idsia.benchmark.mario.engine.sprites.Mario;
 import ch.idsia.benchmark.mario.environments.Environment;
 import ch.idsia.evolution.Evolvable;
 
@@ -22,7 +23,7 @@ implements Agent,Evolvable,Comparable,Cloneable{
 	public int fitness;
 
 	/* 環境から取得する入力数 */
-	public int inputNum = 16;
+	public int inputNum = 22;
 
 	/* 乱数用変数 r */
 	Random r = new Random();
@@ -38,13 +39,12 @@ implements Agent,Evolvable,Comparable,Cloneable{
 		/* 出力は32(=2^5)パターン */
 		int num = 1 << (Environment.numberOfKeys -1);
 
-		int random;
 		int flag = 1;
 
 		/* geneの初期値は乱数(0から31)で取得 */
 		for(int i=0; i<gene.length; i++){
 			if(flag == 1){
-			switch(random = r.nextInt(8)){
+			switch(r.nextInt(8)){
 				case 0:
 					gene[i] = 0; break;
 				case 1:
@@ -107,6 +107,13 @@ implements Agent,Evolvable,Comparable,Cloneable{
 		 */
 
 		/* enemies情報(上位7桁) */
+		input += probe(-3 ,2,levelScene) * (1 << 21);
+		input += probe(-2 ,2,levelScene) * (1 << 20);
+		input += probe(-3 ,1,levelScene) * (1 << 19);
+		input += probe(-2 ,1,levelScene) * (1 << 18);
+		input += probe(-3 ,0,levelScene) * (1 << 17);
+		input += probe(-2 ,0,levelScene) * (1 << 16);
+
 		input += probe(-1,-1,enemies) * (1 << 15); //probe * 2^15
 		input += probe(0 ,-1,enemies) * (1 << 14);
 		input += probe(1 ,-1,enemies) * (1 << 13);
