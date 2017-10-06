@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7b349e83-5731-4141-b751-308fed71bf44" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch/idsia/agents/controllers/OwnAgentTask2.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch/idsia/agents/controllers/OwnAgentTask3.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/scenarios/MainTask3.class" afterPath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/scenarios/MainTask3.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ch/idsia/scenarios/MainTask2.java" afterPath="$PROJECT_DIR$/src/ch/idsia/scenarios/MainTask2.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ch/idsia/agents/controllers/OwnAgentTask3.java" afterPath="$PROJECT_DIR$/src/ch/idsia/agents/controllers/OwnAgentTask3.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ch/idsia/scenarios/MainTask3.java" afterPath="$PROJECT_DIR$/src/ch/idsia/scenarios/MainTask3.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -25,8 +24,8 @@
       <file leaf-file-name="MainTask3.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ch/idsia/scenarios/MainTask3.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="48" column="32" lean-forward="false" selection-start-line="48" selection-start-column="32" selection-end-line="48" selection-end-column="32" />
+            <state relative-caret-position="315">
+              <caret line="46" column="46" lean-forward="false" selection-start-line="46" selection-start-column="46" selection-end-line="46" selection-end-column="46" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -37,8 +36,8 @@
       <file leaf-file-name="OwnAgentTask3.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/ch/idsia/agents/controllers/OwnAgentTask3.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="67" column="81" lean-forward="false" selection-start-line="67" selection-start-column="81" selection-end-line="67" selection-end-column="81" />
+            <state relative-caret-position="1815">
+              <caret line="121" column="42" lean-forward="false" selection-start-line="121" selection-start-column="42" selection-end-line="121" selection-end-column="42" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -46,11 +45,21 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="OwnAgent3.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ch/idsia/agents/controllers/OwnAgent3.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-495">
+              <caret line="53" column="0" lean-forward="true" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="OwnAgentTask2.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ch/idsia/agents/controllers/OwnAgentTask2.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="48" column="0" lean-forward="true" selection-start-line="28" selection-start-column="8" selection-end-line="48" selection-end-column="0" />
+            <state relative-caret-position="120">
+              <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1016#1028#0" expanded="false" />
@@ -165,8 +174,8 @@
         <option value="$PROJECT_DIR$/src/ch/idsia/agents/controllers/OwnAgent0.java" />
         <option value="$PROJECT_DIR$/src/ch/idsia/scenarios/MainTask2.java" />
         <option value="$PROJECT_DIR$/src/ch/idsia/agents/controllers/OwnAgentTask2.java" />
-        <option value="$PROJECT_DIR$/src/ch/idsia/agents/controllers/OwnAgentTask3.java" />
         <option value="$PROJECT_DIR$/src/ch/idsia/scenarios/MainTask3.java" />
+        <option value="$PROJECT_DIR$/src/ch/idsia/agents/controllers/OwnAgentTask3.java" />
       </list>
     </option>
   </component>
@@ -917,12 +926,12 @@
       <updated>1507005037467</updated>
       <workItem from="1507005045629" duration="1364000" />
       <workItem from="1507007408445" duration="49678000" />
-      <workItem from="1507270024322" duration="12062000" />
+      <workItem from="1507270024322" duration="15796000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="63104000" />
+    <option name="totallyTimeSpent" value="66838000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -1285,14 +1294,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ch/idsia/agents/controllers/OwnAgent3.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1010">
-          <caret line="53" column="0" lean-forward="true" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ch/idsia/agents/LearningWithGA.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1215">
@@ -1319,17 +1320,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ch/idsia/agents/controllers/OwnAgentTask2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="48" column="0" lean-forward="true" selection-start-line="28" selection-start-column="8" selection-end-line="48" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1016#1028#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ch/idsia/agents/controllers/ForwardJumpingAgent.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -1340,18 +1330,37 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ch/idsia/scenarios/MainTask3.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="48" column="32" lean-forward="false" selection-start-line="48" selection-start-column="32" selection-end-line="48" selection-end-column="32" />
+        <state relative-caret-position="315">
+          <caret line="46" column="46" lean-forward="false" selection-start-line="46" selection-start-column="46" selection-end-line="46" selection-end-column="46" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/ch/idsia/agents/controllers/OwnAgentTask2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1016#1028#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ch/idsia/agents/controllers/OwnAgent3.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-495">
+          <caret line="53" column="0" lean-forward="true" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/ch/idsia/agents/controllers/OwnAgentTask3.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="67" column="81" lean-forward="false" selection-start-line="67" selection-start-column="81" selection-end-line="67" selection-end-column="81" />
+        <state relative-caret-position="1815">
+          <caret line="121" column="42" lean-forward="false" selection-start-line="121" selection-start-column="42" selection-end-line="121" selection-end-column="42" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

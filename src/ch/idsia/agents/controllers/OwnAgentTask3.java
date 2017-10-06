@@ -12,8 +12,8 @@ import ch.idsia.benchmark.mario.environments.Environment;
 public class OwnAgentTask3 extends BasicMarioAIAgent implements Agent {
 
     private int jumpCount = 0;
-    private boolean jumpFire = false;
     private boolean jumping = false;
+    private boolean escape = false;
 
     public OwnAgentTask3() {
         super("OwnAgentTask3");
@@ -31,25 +31,15 @@ public class OwnAgentTask3 extends BasicMarioAIAgent implements Agent {
         int r = marioEgoRow;
         int c = marioEgoCol;
 
-        /*
-         * メモ
-         * 1瞬ジャンプ：3マス先に着地
-         */
-
         action[Mario.KEY_SPEED] = false;
         action[Mario.KEY_JUMP] = false;
 
 
         // 目の前に敵がいる場合ジャンプで回避
-        if (isEnemy(r, c + 1)) {
+        if (isEnemy(r, c + 1) && !escape) {
             action[Mario.KEY_JUMP] = isMarioAbleToJump;
             return action;
         }
-
-//        // 着地先に敵がいる場合ファイアで撃退
-//        if (!isMarioOnGround && (isEnemy(r, c + 2) || isEnemy(r + 1, c + 2) || isEnemy(r + 3, c + 3))) {
-//            action[Mario.KEY_SPEED] = isMarioAbleToShoot;
-//        }
 
         // 壁の手前でジャンプした着地先に敵がいる場合タイミングを遅らせる
         if (isObstacle(r, c + 1) && isEnemy(r - 1, c + 4)) {
@@ -71,19 +61,39 @@ public class OwnAgentTask3 extends BasicMarioAIAgent implements Agent {
             return action;
         }
 
+        // 着地点の調節
         if (jumping) {
             jumpCount++;
-            if (jumpCount == 3) {
+            if (jumpCount >= 5) {
                 action[Mario.KEY_RIGHT] = true;
                 jumping = false;
                 jumpCount = 0;
             }
         }
 
-        // 右上から敵が落ちてくる場合
+        // 右上から敵が落ちてくる場合(踏んで倒す)
         if (isEnemy(r - 2, c + 3)) {
             action[Mario.KEY_JUMP] = isMarioAbleToJump;
             return action;
+        }
+
+        // 右上から敵が落ちてくる場合(左に避ける)
+        if (isEnemy(r - 2, c + 2)) {
+            action[Mario.KEY_RIGHT] = false;
+            action[Mario.KEY_LEFT] = true;
+            escape = true;
+            return action;
+        }
+
+        // 左に避ける
+        if (escape) {
+            jumpCount++;
+            if (jumpCount >= 10) {
+                action[Mario.KEY_LEFT] = false;
+                action[Mario.KEY_RIGHT] = true;
+                escape = false;
+                jumpCount = 0;
+            }
         }
 
         // 目の前に障害物があればジャンプ
@@ -99,13 +109,11 @@ public class OwnAgentTask3 extends BasicMarioAIAgent implements Agent {
 
     private boolean isEnemy(int r, int c) {
         // (r, c)に敵がいたらtrue
-
         return getEnemiesCellValue(r, c) != 0;
     }
 
     private boolean isObstacle(int r, int c) {
         // (r, c)に障害物があればtrueを返す
-
         return getReceptiveFieldCellValue(r, c) == GeneralizerLevelScene.BRICK
                 || getReceptiveFieldCellValue(r, c) == GeneralizerLevelScene.BORDER_CANNOT_PASS_THROUGH
                 || getReceptiveFieldCellValue(r, c) == GeneralizerLevelScene.FLOWER_POT_OR_CANNON;
@@ -113,12 +121,9 @@ public class OwnAgentTask3 extends BasicMarioAIAgent implements Agent {
 
     private boolean isHole(int r, int c) {
         // (r, c)に穴があればtrueを返す
-
         int i = 1;
         while (i <= 9) {
-            if (getReceptiveFieldCellValue(r + i, c) != 0) {
-                return false;
-            }
+            if (getReceptiveFieldCellValue(r + i, c) != 0) return false;
             i++;
         }
         return true;
@@ -126,7 +131,6 @@ public class OwnAgentTask3 extends BasicMarioAIAgent implements Agent {
 
     private boolean isNothing(int r, int c) {
         // (r, c)に何もなければtrue
-
         return getReceptiveFieldCellValue(r, c) == 0;
     }
 }
