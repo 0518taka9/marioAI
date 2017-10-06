@@ -28,6 +28,7 @@
 package ch.idsia.scenarios;
 
 import ch.idsia.agents.controllers.OwnAgent3;
+import ch.idsia.agents.controllers.OwnAgentTask3;
 import ch.idsia.benchmark.tasks.BasicTask;
 import ch.idsia.tools.MarioAIOptions;
 import ch.idsia.agents.Agent;
@@ -42,7 +43,8 @@ public static void main(String[] args)
 {
     final MarioAIOptions marioAIOptions = new MarioAIOptions(args);
 
-    final Agent agent = new OwnAgent3();
+//    final Agent agent = new OwnAgent3();
+    final Agent agent = new OwnAgentTask3();
     marioAIOptions.setAgent(agent);
 
     marioAIOptions.setArgs("-lde on -ltb off -ld 2 -ls 0 -le g");

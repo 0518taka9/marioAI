@@ -14,6 +14,7 @@ public class OwnAgentTask3 extends BasicMarioAIAgent implements Agent {
     private int jumpCount = 0;
     private boolean jumping = false;
     private boolean escape = false;
+    private boolean stomp = false;
 
     public OwnAgentTask3() {
         super("OwnAgentTask3");
@@ -23,7 +24,6 @@ public class OwnAgentTask3 extends BasicMarioAIAgent implements Agent {
     public void reset() {
         action = new boolean[Environment.numberOfKeys];
         action[Mario.KEY_RIGHT] = true;
-//        action[Mario.KEY_SPEED] = true;
     }
 
     public boolean[] getAction() {
@@ -35,8 +35,14 @@ public class OwnAgentTask3 extends BasicMarioAIAgent implements Agent {
         action[Mario.KEY_JUMP] = false;
 
 
-        // 目の前に敵がいる場合ジャンプで回避
-        if (isEnemy(r, c + 1) && !escape) {
+        // 目の前に敵がいる場合ジャンプで回避(右)
+        if (action[Mario.KEY_RIGHT]  && isEnemy(r, c + 1) || isEnemy(r, c + 2)) {
+            action[Mario.KEY_JUMP] = isMarioAbleToJump;
+            return action;
+        }
+
+        // 目の前に敵がいる場合ジャンプで回避(左)
+        if (action[Mario.KEY_LEFT] && isEnemy(r, c - 1)) {
             action[Mario.KEY_JUMP] = isMarioAbleToJump;
             return action;
         }
@@ -44,6 +50,23 @@ public class OwnAgentTask3 extends BasicMarioAIAgent implements Agent {
         // 壁の手前でジャンプした着地先に敵がいる場合タイミングを遅らせる
         if (isObstacle(r, c + 1) && isEnemy(r - 1, c + 4)) {
             return action;
+        }
+
+        // 着地点の後ろから敵が来ている場合着地点を左に調整
+        if (!isMarioOnGround
+                && isEnemy(r + 2, c - 1) && !isObstacle(r + 2, c - 1)) {
+            action[Mario.KEY_RIGHT] = false;
+            action[Mario.KEY_LEFT] = true;
+            stomp = true;
+            return action;
+        }
+
+        // 左に調整
+        if (stomp) {
+            action[Mario.KEY_LEFT] = false;
+            action[Mario.KEY_RIGHT] = true;
+            stomp = false;
+            jumpCount = 0;
         }
 
         // 着地先に地面がない場合着地点を左に調整
@@ -55,7 +78,13 @@ public class OwnAgentTask3 extends BasicMarioAIAgent implements Agent {
         }
 
         // 着地先に敵がいる場合着地点を左に調整
-        if (!isMarioOnGround && (isEnemy(r + 2, c + 2) || isEnemy(r + 2, c + 3))) {
+        if (!isMarioOnGround && (isEnemy(r + 1, c + 4)
+                || (isEnemy(r + 1, c + 3) && isNothing(r + 2, c))
+                || (isEnemy(r, c + 4) && isNothing(r + 2, c))
+                || (isEnemy(r + 2, c + 2) && !isObstacle(r + 2, c + 2))
+                || (isEnemy(r + 2, c + 3) && !isObstacle(r + 2, c + 3)))
+                && !isNothing(r + 3, c + 2) && !isNothing(r + 3, c + 3)
+                ) {
             action[Mario.KEY_RIGHT] = false;
             jumping = true;
             return action;
@@ -73,7 +102,7 @@ public class OwnAgentTask3 extends BasicMarioAIAgent implements Agent {
 
         // 右上から敵が落ちてくる場合(踏んで倒す)
         if (isEnemy(r - 2, c + 3)) {
-            action[Mario.KEY_JUMP] = isMarioAbleToJump;
+            action[Mario.KEY_JUMP] = isMarioAbleToJump || !isMarioOnGround;
             return action;
         }
 
@@ -101,7 +130,7 @@ public class OwnAgentTask3 extends BasicMarioAIAgent implements Agent {
             action[Mario.KEY_JUMP] = isMarioAbleToJump || !isMarioOnGround;
 
         // 目の前に穴があればジャンプ
-        if (isMarioOnGround && isHole(r, c + 1))
+        if (isHole(r, c + 1))
             action[Mario.KEY_JUMP] = isMarioAbleToJump || !isMarioOnGround;
 
         return action;

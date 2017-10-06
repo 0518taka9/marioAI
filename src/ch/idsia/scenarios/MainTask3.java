@@ -48,7 +48,7 @@ public final class MainTask3 {
 //        Agent agent = AgentsPool.getCurrentAgent();
 
         marioAIOptions.setAgent(agent);
-        marioAIOptions.setFPS(15);
+//        marioAIOptions.setFPS(15);
         marioAIOptions.setArgs("-lhs off -ltb on -lg off -lb off -ld 1 -ls 0 -le g");
 
         final BasicTask basicTask = new BasicTask(marioAIOptions);
