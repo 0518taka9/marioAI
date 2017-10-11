@@ -1,121 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7b349e83-5731-4141-b751-308fed71bf44" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch/idsia/agents/OwnGGAgent.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-04_19-11-53.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-04_19-12-14.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-04_19-12-57.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-04_19-13-22.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-04_19-14-20.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-04_19-14-52.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-04_19-15-08.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-04_19-16-11.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-04_19-16-59.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-04_19-18-53.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-04_19-19-08.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-04_19-20-10.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-04_19-20-57.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-04_19-22-36.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-05_11-40-23.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-05_11-40-37.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-05_11-41-28.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-05_11-42-06.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-05_11-42-48.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-05_11-43-04.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-05_11-43-35.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-05_11-43-49.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-05_11-49-39.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-05_11-58-18.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-05_11-58-29.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-05_11-58-39.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-05_11-59-04.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-05_11-59-18.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-05_12-00-04.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-05_12-00-39.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-05_12-00-56.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-05_12-01-14.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-05_12-58-55.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-05_12-59-10.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-05_13-01-06.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-05_13-01-21.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-05_13-26-23.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-05_13-26-47.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-05_13-27-11.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-05_13-27-25.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-05_13-27-55.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-05_13-28-28.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-05_13-29-16.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-05_13-29-32.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-05_13-29-48.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-05_13-30-05.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-05_13-31-08.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-05_13-38-34.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-05_13-38-54.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-05_13-39-29.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-05_13-39-40.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-05_13-39-52.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-05_13-40-42.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-05_13-40-57.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-05_13-51-02.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-05_13-51-07.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-05_13-52-20.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-05_13-52-43.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-05_13-52-53.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-05_13-53-05.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-05_13-53-17.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-05_13-53-28.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-05_13-56-19.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-05_14-01-26.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-05_14-01-37.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-05_14-01-46.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-05_14-02-10.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-05_14-02-39.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-05_14-03-06.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-05_14-03-23.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-05_14-04-16.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-05_14-05-10.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-05_14-06-14.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-05_14-23-14.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-05_14-23-45.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-05_14-24-10.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-05_14-25-11.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-05_14-25-48.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-05_14-26-45.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-05_14-27-42.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-05_14-29-24.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-05_14-29-42.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-05_15-29-37.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-05_15-30-11.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-05_15-30-44.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-05_15-31-28.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-05_15-33-06.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-05_15-35-47.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-05_15-36-35.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-05_15-37-18.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-05_15-38-42.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-05_15-38-57.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-05_15-40-16.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/agents/GAAgent.class" afterPath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/agents/GAAgent.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/agents/LearningWithGA.class" afterPath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/agents/LearningWithGA.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/agents/controllers/BasicMarioAIAgent.class" afterPath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/agents/controllers/BasicMarioAIAgent.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/agents/controllers/ForwardJumpingAgent.class" afterPath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/agents/controllers/ForwardJumpingAgent.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/agents/controllers/OwnAgentTask2.class" afterPath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/agents/controllers/OwnAgentTask2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/scenarios/Main.class" afterPath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/scenarios/Main.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/scenarios/MainTask3.class" afterPath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/scenarios/MainTask3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/scenarios/Play.class" afterPath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/scenarios/Play.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/scenarios/champ/LearningTrack.class" afterPath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/scenarios/champ/LearningTrack.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ch/idsia/agents/GAAgent.java" afterPath="$PROJECT_DIR$/src/ch/idsia/agents/GAAgent.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ch/idsia/agents/LearningWithGA.java" afterPath="$PROJECT_DIR$/src/ch/idsia/agents/LearningWithGA.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ch/idsia/agents/controllers/BasicMarioAIAgent.java" afterPath="$PROJECT_DIR$/src/ch/idsia/agents/controllers/BasicMarioAIAgent.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ch/idsia/agents/controllers/ForwardJumpingAgent.java" afterPath="$PROJECT_DIR$/src/ch/idsia/agents/controllers/ForwardJumpingAgent.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ch/idsia/agents/controllers/OwnAgentTask2.java" afterPath="$PROJECT_DIR$/src/ch/idsia/agents/controllers/OwnAgentTask2.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ch/idsia/scenarios/Main.java" afterPath="$PROJECT_DIR$/src/ch/idsia/scenarios/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ch/idsia/scenarios/MainTask3.java" afterPath="$PROJECT_DIR$/src/ch/idsia/scenarios/MainTask3.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ch/idsia/scenarios/Play.java" afterPath="$PROJECT_DIR$/src/ch/idsia/scenarios/Play.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ch/idsia/scenarios/champ/LearningTrack.java" afterPath="$PROJECT_DIR$/src/ch/idsia/scenarios/champ/LearningTrack.java" />
-    </list>
+    <list default="true" id="7b349e83-5731-4141-b751-308fed71bf44" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -1069,12 +955,12 @@
       <workItem from="1507007408445" duration="49678000" />
       <workItem from="1507270024322" duration="27805000" />
       <workItem from="1507605593303" duration="18723000" />
-      <workItem from="1507685257629" duration="60000" />
+      <workItem from="1507685257629" duration="108000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="97630000" />
+    <option name="totallyTimeSpent" value="97678000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1440" y="0" width="1920" height="1080" extended-state="0" />
