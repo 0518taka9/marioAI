@@ -14,18 +14,21 @@ import ch.idsia.utils.wox.serial.Easy;
 public class LearningWithGA implements LearningAgent {
 
     /* 個体数 */
-    private final int popsize = 200;
+    private final int popsize = 100;
 
     /* エリート数 */
     private final int bestnum = 2;
 
-    private final float mutateRate = 0.2f;
+    /* エポック数 */
+    private final int EndEpoch = 50;
+
+    private final float mutateRate = 0.1f;
     final float crossRate = 0.5f;
 
     //	private LearningTask task = null;
     String name = "LearningWithGA";
-    GAAgent[] agents;
-    Agent bestAgent;
+    OwnGGAgent[] agents;
+    private Agent bestAgent;
     private String args;
     /* 評価時最大値保持用変数 */
     float fmax;
@@ -46,9 +49,9 @@ public class LearningWithGA implements LearningAgent {
         fmax = 0;
 
 		/* 個体数分だけAgentを作成 */
-        agents = new GAAgent[popsize];
+        agents = new OwnGGAgent[popsize];
         for (int i = 0; i < agents.length; i++) {
-            agents[i] = new GAAgent();
+            agents[i] = new OwnGGAgent();
         }
 
 		/* agent[0] をbestAgentとして初期化 */
@@ -66,9 +69,9 @@ public class LearningWithGA implements LearningAgent {
 			/* 100個体の評価 */
 
             compFit();
-            GAAgent nextagents[] = new GAAgent[popsize];
-            for (int i = bestnum; i < popsize; i++) {
-                nextagents[i] = new GAAgent();
+            OwnGGAgent[] nextagents = new OwnGGAgent[popsize];
+            for (int i = 0; i < popsize; i++) {
+                nextagents[i] = new OwnGGAgent();
             }
 
 
@@ -92,10 +95,10 @@ public class LearningWithGA implements LearningAgent {
 			/* 突然変異 */
             mutate();
 
-            int EndEpoch = 100;
             if (generation == EndEpoch) {
                 System.out.println("Generation[" + generation + "] : Playing!");
                 halfwayPlayMario(bestAgent);
+                writeFile();
                 System.out.println("Learning is stopped");
                 break;
             }
@@ -136,21 +139,23 @@ public class LearningWithGA implements LearningAgent {
 
 			/* 評価値(距離)をセット */
             EvaluationInfo evaluationInfo = basicTask.getEvaluationInfo();
-            agents[i].setFitness(evaluationInfo.computeWeightedFitness());
+//            agents[i].setFitness(evaluationInfo.computeWeightedFitness());
+            agents[i].setFitness(evalFitness(evaluationInfo));
+//            agents[i].setFitness(evaluationInfo.computeBasicFitness());
             agents[i].setDistance(evaluationInfo.distancePassedCells);
         }
-
 		/* 降順にソートする */
         Arrays.sort(agents);
 
 		/* 首席Agentが過去の最高評価値を超えた場合，xmlを生成． */
-        int presentBestAgentDistance = agents[0].getFitness();
+        int presentBestAgentFitness = agents[0].getFitness();
+        int presentBestAgentDistance = agents[0].getDistance();
 
-        System.out.println("agents[0]Fitness : " + presentBestAgentDistance + "\n" + "agents[0].distance : " + agents[0].getDistance());
+        System.out.println("agents[0]Fitness : " + presentBestAgentFitness + "\n" + "agents[0].distance : " + presentBestAgentDistance);
 
-        if (presentBestAgentDistance > fmax) {
+        if (presentBestAgentFitness > fmax) {
             this.bestAgent = agents[0].clone();    //bestAgentを更新
-            fmax = presentBestAgentDistance;    //fmax更新
+            fmax = presentBestAgentFitness;    //fmax更新
             if (presentBestAgentDistance == 256)
                 writeFile();            //bestAgentのxmlを出力
             System.out.println("fmax : " + fmax);
@@ -217,7 +222,7 @@ public class LearningWithGA implements LearningAgent {
     }
 
     /* 交叉 */
-    private void cross(GAAgent[] nextagents, int[] parentsGene, int i) {
+    private void cross(OwnGGAgent[] nextagents, int[] parentsGene, int i) {
 
         int geneLength = (1 << 16);
 
@@ -309,6 +314,14 @@ public class LearningWithGA implements LearningAgent {
 //        Easy.save(agents[0], fileName);
     }
 
+    /* 評価用関数 */
+    private int evalFitness(EvaluationInfo evaluationInfo) {
+        return evaluationInfo.distancePassedPhys
+                + evaluationInfo.timeLeft * 10
+                + evaluationInfo.killsTotal * 10
+                + evaluationInfo.coinsGained * 10;
+    }
+
     @Override
     public boolean[] getAction() {
         // TODO 自動生成されたメソッド・スタブ
@@ -376,7 +389,7 @@ public class LearningWithGA implements LearningAgent {
 
     @Override
     public Agent getBestAgent() {
-        return bestAgent;
+        return this.bestAgent;
     }
 
     @Override

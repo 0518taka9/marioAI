@@ -31,6 +31,8 @@ import ch.idsia.agents.Agent;
 import ch.idsia.benchmark.mario.engine.sprites.Mario;
 import ch.idsia.benchmark.mario.environments.Environment;
 
+import java.util.Arrays;
+
 /**
  * Created by IntelliJ IDEA.
  * User: Sergey Karakovskiy
@@ -49,6 +51,7 @@ public ForwardJumpingAgent()
 
 public boolean[] getAction()
 {
+    System.out.println(Arrays.toString(marioFloatPos));
     action[Mario.KEY_SPEED] = isMarioAbleToJump || !isMarioOnGround;
     action[Mario.KEY_JUMP] = isMarioAbleToJump || !isMarioOnGround;
     return action;

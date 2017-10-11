@@ -18,7 +18,6 @@ public class OwnAgentTask2 extends BasicMarioAIAgent implements Agent {
     public void reset() {
         action = new boolean[Environment.numberOfKeys];
         action[Mario.KEY_RIGHT] = true;
-//        action[Mario.KEY_SPEED] = true;
     }
 
     public boolean[] getAction() {
@@ -34,19 +33,6 @@ public class OwnAgentTask2 extends BasicMarioAIAgent implements Agent {
         // 目の前に穴があればジャンプ
         if (isHole(r, c + 1)) action[Mario.KEY_JUMP] = isMarioAbleToJump || !isMarioOnGround;
 
-//        //
-//        if (isObstacle(r, c)) {
-//            if (isMarioAbleToJump) action[Mario.KEY_JUMP] = true;
-//            obstacleJump = true;
-//        }
-//        if (obstacleJump) {
-//            jumpCount++;
-//            if (jumpCount == 3) {
-//                action[Mario.KEY_JUMP] = false;
-//                jumpCount = 0;
-//            }
-//        }
-
         return action;
     }
 
@@ -60,12 +46,10 @@ public class OwnAgentTask2 extends BasicMarioAIAgent implements Agent {
 
     private boolean isHole(int r, int c) {
         // (r, c)に穴があればtrueを返す
-
         int i = 1;
         while (i <= 9) {
-            if (getReceptiveFieldCellValue(r + i, c) != 0) {
+            if (getReceptiveFieldCellValue(r + i, c) != 0)
                 return false;
-            }
             i++;
         }
         return true;
@@ -73,7 +57,6 @@ public class OwnAgentTask2 extends BasicMarioAIAgent implements Agent {
 
     private boolean isNothing(int r, int c) {
         // (r, c)に何もなければtrue
-
         return getReceptiveFieldCellValue(r, c) == 0;
     }
 }

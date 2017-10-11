@@ -62,6 +62,12 @@ public static void main(String[] args)
 {
     final MarioAIOptions marioAIOptions = new MarioAIOptions(args);
     final BasicTask basicTask = new BasicTask(marioAIOptions);
+//    marioAIOptions.setArgs("-lde on -i on -ltb off -ld 2 -ls 0 -le g");
+//    marioAIOptions.setArgs("-lco off -lb on -le off -lhb off -lg on -ltb on -lhs off -lca on -lde on -ld 5 -ls 133829");
+
+    // MainTask4_1
+    marioAIOptions.setArgs("-lde on -i on -ltb off -ld 2 -ls 0 -le g");
+    marioAIOptions.setTimeLimit(Integer.MAX_VALUE);
     marioAIOptions.setVisualization(true);
 //        basicTask.reset(marioAIOptions);
     final MarioCustomSystemOfValues m = new MarioCustomSystemOfValues();

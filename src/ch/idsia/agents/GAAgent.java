@@ -23,7 +23,7 @@ implements Agent,Evolvable,Comparable,Cloneable{
 	public int fitness;
 
 	/* 環境から取得する入力数 */
-	public int inputNum = 22;
+	public int inputNum = 16;
 
 	/* 乱数用変数 r */
 	Random r = new Random();
@@ -107,13 +107,6 @@ implements Agent,Evolvable,Comparable,Cloneable{
 		 */
 
 		/* enemies情報(上位7桁) */
-		input += probe(-3 ,2,levelScene) * (1 << 21);
-		input += probe(-2 ,2,levelScene) * (1 << 20);
-		input += probe(-3 ,1,levelScene) * (1 << 19);
-		input += probe(-2 ,1,levelScene) * (1 << 18);
-		input += probe(-3 ,0,levelScene) * (1 << 17);
-		input += probe(-2 ,0,levelScene) * (1 << 16);
-
 		input += probe(-1,-1,enemies) * (1 << 15); //probe * 2^15
 		input += probe(0 ,-1,enemies) * (1 << 14);
 		input += probe(1 ,-1,enemies) * (1 << 13);
@@ -149,8 +142,8 @@ implements Agent,Evolvable,Comparable,Cloneable{
 
 
 	private double probe(int x, int y, byte[][] scene){
-	    int realX = x + 11;
-	    int realY = y + 11;
+	    int realX = x + 9;
+	    int realY = y + 9;
 	    return (scene[realX][realY] != 0) ? 1 : 0;
 	}
 

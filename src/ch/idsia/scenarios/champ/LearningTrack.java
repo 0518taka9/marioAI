@@ -211,7 +211,7 @@ public final class LearningTrack {
         LearningAgent learningAgent = new LearningWithGA("-lde on -i on -ltb off -ld 2 -ls 0 -le g");
 
 	/* MainTask4_2.java */
-        // LearningAgent learningAgent = new LearningWithGA("-lco off -lb on -le off -lhb off -lg on -ltb on -lhs off -lca on -lde on -ld 5 -ls 133829");
+//         LearningAgent learningAgent = new LearningWithGA("-lco off -lb on -le off -lhb off -lg on -ltb on -lhs off -lca on -lde on -ld 5 -ls 133829");
 
 	/* MainTask4_3.java */
         // LearningAgent learningAgent = new LearningWithGA("-lde on -i off -ld 30 -ls 133434 -lhb on");
@@ -222,59 +222,10 @@ public final class LearningTrack {
         MarioAIOptions marioAIOptions = new MarioAIOptions(args);
         //LearningAgent learningAgent = new MLPESLearningAgent(); // Learning track competition entry goes here
 
-
-
-
 	/* 学習するステージを生成 */
 
-	/*------ Level 0 ------*/
-
-
-//	marioAIOptions = new MarioAIOptions(args);
-//	marioAIOptions.setArgs("-lf on -lg on");
-//	finalScore += LearningTrack.evaluateSubmission(marioAIOptions, learningAgent);
-    /* ステージ生成 */
-        //marioAIOptions.setArgs("-le 1 -ld 2");
-
-
-	/*------ Level 1 ------*/
-
-	/* MarioAIOptions 追加
-	 * float で宣言
-	 */
-
-//	marioAIOptions = new MarioAIOptions(args);
-//	marioAIOptions.setArgs("-lco off -lb on -le off -lhb off -lg on -ltb on -lhs off -lca on -lde on -ld 5 -ls 133829");
-//	finalScore += LearningTrack.evaluateSubmission(marioAIOptions, learningAgent);
-
-
-	/*------ Level 2 ------*/
-    /*
-    marioAIOptions = new MarioAIOptions(args);
-    */
-        //marioAIOptions.setArgs("-lde on -i on -ld 30 -ls 133434");
-    /*finalScore += LearningTrack.evaluateSubmission(marioAIOptions, learningAgent);
-	*/
-
-	/*------ Level 3 ------*/
-    /*
-    marioAIOptions = new MarioAIOptions(args);
-    marioAIOptions.setArgs("-lde on -i on -ld 30 -ls 133434 -lhb on");
-    finalScore += LearningTrack.evaluateSubmission(marioAIOptions, learningAgent);
-	*/
-
-	/*------ Level 4 ------*/
-
-//    marioAIOptions = new MarioAIOptions(args);
-//    marioAIOptions.setArgs("-lla on -le off -lhs on -lde on -ld 5 -ls 1332656");
-//    finalScore += LearningTrack.evaluateSubmission(marioAIOptions, learningAgent);
-
-
-    /* Level 5 (bonus level) */
-
-//    marioAIOptions = new MarioAIOptions(args);
-//    marioAIOptions.setArgs("-le off -lhs on -lde on -ld 5 -ls 1332656");
-//    finalScore += LearningTrack.evaluateSubmission(marioAIOptions, learningAgent);
+	/* MainTask4_1.java */
+        marioAIOptions.setArgs("-lde on -i on -ltb off -ld 2 -ls 0 -le g");
 
 	/* 学習後の得点をfinalScoreに保存し画面へ出力 */
         float finalScore = LearningTrack.evaluateSubmission(marioAIOptions, learningAgent);

@@ -27,6 +27,7 @@
 
 package ch.idsia.scenarios;
 
+import ch.idsia.agents.controllers.ForwardJumpingAgent;
 import ch.idsia.agents.controllers.OwnAgent;
 import ch.idsia.agents.controllers.ScaredShooty;
 import ch.idsia.benchmark.tasks.BasicTask;
@@ -42,10 +43,10 @@ public final class Main {
         final MarioAIOptions marioAIOptions = new MarioAIOptions(args);
 
         // ジャンプエージェント
-//        final Agent agent = new ForwardJumpingAgent();
+        final Agent agent = new ForwardJumpingAgent();
 
         // 自作エージェント
-        final Agent agent = new OwnAgent();
+//        final Agent agent = new OwnAgent();
 
 //        final Agent agent = new ScaredShooty();
         // エージェントを設定
@@ -56,11 +57,11 @@ public final class Main {
         marioAIOptions.setLevelDifficulty(d);
 
         // ステージ
-        int seed = 9;
+        int seed = 50;
         marioAIOptions.setLevelRandSeed(seed);
 
         // 敵
-        marioAIOptions.setEnemies("off");
+        marioAIOptions.setEnemies("ggkrk");
 
         final BasicTask basicTask = new BasicTask(marioAIOptions);
         basicTask.setOptionsAndReset(marioAIOptions);

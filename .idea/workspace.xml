@@ -2,13 +2,119 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7b349e83-5731-4141-b751-308fed71bf44" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/agents/controllers/OwnAgentTask3.class" afterPath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/agents/controllers/OwnAgentTask3.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch/idsia/agents/OwnGGAgent.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-04_19-11-53.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-04_19-12-14.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-04_19-12-57.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-04_19-13-22.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-04_19-14-20.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-04_19-14-52.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-04_19-15-08.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-04_19-16-11.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-04_19-16-59.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-04_19-18-53.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-04_19-19-08.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-04_19-20-10.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-04_19-20-57.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-04_19-22-36.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-05_11-40-23.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-05_11-40-37.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-05_11-41-28.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-05_11-42-06.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-05_11-42-48.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-05_11-43-04.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-05_11-43-35.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-05_11-43-49.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-05_11-49-39.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-05_11-58-18.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-05_11-58-29.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-05_11-58-39.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-05_11-59-04.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-05_11-59-18.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-05_12-00-04.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-05_12-00-39.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-05_12-00-56.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-05_12-01-14.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-05_12-58-55.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-05_12-59-10.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-05_13-01-06.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-05_13-01-21.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-05_13-26-23.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-05_13-26-47.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-05_13-27-11.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-05_13-27-25.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-05_13-27-55.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-05_13-28-28.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-05_13-29-16.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-05_13-29-32.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-05_13-29-48.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-05_13-30-05.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-05_13-31-08.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-05_13-38-34.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-05_13-38-54.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-05_13-39-29.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-05_13-39-40.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-05_13-39-52.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-05_13-40-42.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-05_13-40-57.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-05_13-51-02.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-05_13-51-07.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-05_13-52-20.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-05_13-52-43.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-05_13-52-53.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-05_13-53-05.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-05_13-53-17.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-05_13-53-28.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-05_13-56-19.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-05_14-01-26.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-05_14-01-37.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-05_14-01-46.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-05_14-02-10.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-05_14-02-39.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-05_14-03-06.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-05_14-03-23.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-05_14-04-16.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-05_14-05-10.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-05_14-06-14.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-05_14-23-14.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-05_14-23-45.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-05_14-24-10.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-05_14-25-11.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-05_14-25-48.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-05_14-26-45.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-05_14-27-42.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-05_14-29-24.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-05_14-29-42.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-05_15-29-37.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-05_15-30-11.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-05_15-30-44.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-05_15-31-28.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-05_15-33-06.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-05_15-35-47.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-05_15-36-35.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-05_15-37-18.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-05_15-38-42.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-05_15-38-57.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/LearningWithGA-2017-10-05_15-40-16.xml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/agents/GAAgent.class" afterPath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/agents/GAAgent.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/agents/LearningWithGA.class" afterPath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/agents/LearningWithGA.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/agents/controllers/BasicMarioAIAgent.class" afterPath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/agents/controllers/BasicMarioAIAgent.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/agents/controllers/ForwardJumpingAgent.class" afterPath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/agents/controllers/ForwardJumpingAgent.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/agents/controllers/OwnAgentTask2.class" afterPath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/agents/controllers/OwnAgentTask2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/scenarios/Main.class" afterPath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/scenarios/Main.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/scenarios/MainTask3.class" afterPath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/scenarios/MainTask3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/scenarios/MainTask4_1.class" afterPath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/scenarios/MainTask4_1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/scenarios/Play.class" afterPath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/scenarios/Play.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/scenarios/champ/LearningTrack.class" afterPath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/scenarios/champ/LearningTrack.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ch/idsia/agents/controllers/OwnAgentTask3.java" afterPath="$PROJECT_DIR$/src/ch/idsia/agents/controllers/OwnAgentTask3.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ch/idsia/agents/GAAgent.java" afterPath="$PROJECT_DIR$/src/ch/idsia/agents/GAAgent.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ch/idsia/agents/LearningWithGA.java" afterPath="$PROJECT_DIR$/src/ch/idsia/agents/LearningWithGA.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ch/idsia/agents/controllers/BasicMarioAIAgent.java" afterPath="$PROJECT_DIR$/src/ch/idsia/agents/controllers/BasicMarioAIAgent.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ch/idsia/agents/controllers/ForwardJumpingAgent.java" afterPath="$PROJECT_DIR$/src/ch/idsia/agents/controllers/ForwardJumpingAgent.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ch/idsia/agents/controllers/OwnAgentTask2.java" afterPath="$PROJECT_DIR$/src/ch/idsia/agents/controllers/OwnAgentTask2.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ch/idsia/scenarios/Main.java" afterPath="$PROJECT_DIR$/src/ch/idsia/scenarios/Main.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ch/idsia/scenarios/MainTask3.java" afterPath="$PROJECT_DIR$/src/ch/idsia/scenarios/MainTask3.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ch/idsia/scenarios/MainTask4_1.java" afterPath="$PROJECT_DIR$/src/ch/idsia/scenarios/MainTask4_1.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ch/idsia/scenarios/Play.java" afterPath="$PROJECT_DIR$/src/ch/idsia/scenarios/Play.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ch/idsia/scenarios/champ/LearningTrack.java" afterPath="$PROJECT_DIR$/src/ch/idsia/scenarios/champ/LearningTrack.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,25 +130,24 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="OwnAgentTask2.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/ch/idsia/agents/controllers/OwnAgentTask2.java">
+      <file leaf-file-name="GAAgent.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ch/idsia/agents/GAAgent.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1016#1028#0" expanded="false" />
-              </folding>
+            <state relative-caret-position="2040">
+              <caret line="145" column="25" lean-forward="false" selection-start-line="145" selection-start-column="25" selection-end-line="145" selection-end-column="25" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainTask2.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ch/idsia/scenarios/MainTask2.java">
+      <file leaf-file-name="OwnGGAgent.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/ch/idsia/agents/OwnGGAgent.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="45" column="47" lean-forward="false" selection-start-line="45" selection-start-column="47" selection-end-line="45" selection-end-column="47" />
-              <folding />
+            <state relative-caret-position="15">
+              <caret line="24" column="28" lean-forward="false" selection-start-line="24" selection-start-column="28" selection-end-line="24" selection-end-column="28" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -50,8 +155,8 @@
       <file leaf-file-name="LearningWithGA.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ch/idsia/agents/LearningWithGA.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1215">
-              <caret line="94" column="31" lean-forward="false" selection-start-line="94" selection-start-column="31" selection-end-line="94" selection-end-column="31" />
+            <state relative-caret-position="390">
+              <caret line="35" column="28" lean-forward="false" selection-start-line="35" selection-start-column="28" selection-end-line="35" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -60,8 +165,8 @@
       <file leaf-file-name="LearningTrack.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ch/idsia/scenarios/champ/LearningTrack.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="415">
-              <caret line="100" column="30" lean-forward="false" selection-start-line="100" selection-start-column="30" selection-end-line="100" selection-end-column="30" />
+            <state relative-caret-position="2880">
+              <caret line="223" column="0" lean-forward="false" selection-start-line="223" selection-start-column="0" selection-end-line="223" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -69,13 +174,46 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BasicMarioAIAgent.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ch/idsia/agents/controllers/BasicMarioAIAgent.java">
+      <file leaf-file-name="EvaluationInfo.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ch/idsia/tools/EvaluationInfo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="930">
-              <caret line="89" column="0" lean-forward="false" selection-start-line="89" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
+            <state relative-caret-position="1050">
+              <caret line="102" column="11" lean-forward="false" selection-start-line="102" selection-start-column="11" selection-end-line="102" selection-end-column="11" />
               <folding>
-                <element signature="e#3409#3410#0" expanded="true" />
+                <element signature="e#4959#4960#0" expanded="true" />
+                <element signature="e#5022#5023#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MainTask3.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ch/idsia/scenarios/MainTask3.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="46" column="88" lean-forward="false" selection-start-line="46" selection-start-column="88" selection-end-line="46" selection-end-column="88" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Play.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ch/idsia/scenarios/Play.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="585">
+              <caret line="66" column="0" lean-forward="false" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ch/idsia/scenarios/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="495">
+              <caret line="63" column="40" lean-forward="false" selection-start-line="63" selection-start-column="40" selection-end-line="63" selection-end-column="40" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -124,8 +262,6 @@
         <option value="$PROJECT_DIR$/src/ch/idsia/agents/controllers/IgnoreObstacleAgent.java" />
         <option value="$PROJECT_DIR$/src/ch/idsia/agents/controllers/ScaredShooty.java" />
         <option value="$PROJECT_DIR$/src/ch/idsia/agents/controllers/RandomAgent.java" />
-        <option value="$PROJECT_DIR$/src/ch/idsia/scenarios/Main.java" />
-        <option value="$PROJECT_DIR$/src/ch/idsia/agents/controllers/OwnAgent.java" />
         <option value="$PROJECT_DIR$/src/ch/idsia/agents/controllers/human/OwmAgent3.java" />
         <option value="$PROJECT_DIR$/src/ch/idsia/agents/controllers/OwnAgent3" />
         <option value="$PROJECT_DIR$/src/ch/idsia/agents/controllers/OwnAgent3.java" />
@@ -135,16 +271,25 @@
         <option value="$PROJECT_DIR$/src/ch/idsia/scenarios/oldscenarios/Stats.java" />
         <option value="$PROJECT_DIR$/src/ch/idsia/agents/controllers/TimingAgent.java" />
         <option value="$PROJECT_DIR$/src/ch/idsia/scenarios/oldscenarios/MainRun.java" />
-        <option value="$PROJECT_DIR$/src/ch/idsia/scenarios/champ/LearningTrack.java" />
-        <option value="$PROJECT_DIR$/src/ch/idsia/agents/GAAgent.java" />
-        <option value="$PROJECT_DIR$/src/ch/idsia/agents/LearningWithGA.java" />
         <option value="$PROJECT_DIR$/src/ch/idsia/agents/controllers/human/OwnAgent0.java" />
         <option value="$PROJECT_DIR$/src/ch/idsia/agents/controllers/OwnAgent0.java" />
         <option value="$PROJECT_DIR$/src/ch/idsia/scenarios/MainTask2.java" />
-        <option value="$PROJECT_DIR$/src/ch/idsia/agents/controllers/OwnAgentTask2.java" />
         <option value="$PROJECT_DIR$/src/ch/idsia/scenarios/MainTask4_1.java" />
         <option value="$PROJECT_DIR$/src/ch/idsia/agents/controllers/OwnAgentTask3.java" />
+        <option value="$PROJECT_DIR$/src/ch/idsia/agents/controllers/OwnAgentTask2.java" />
+        <option value="$PROJECT_DIR$/src/ch/idsia/agents/controllers/BasicMarioAIAgent.java" />
+        <option value="$PROJECT_DIR$/src/ch/idsia/agents/learning/OwnGAAgent.java" />
+        <option value="$PROJECT_DIR$/src/ch/idsia/agents/controllers/OwnAgent.java" />
+        <option value="$PROJECT_DIR$/src/ch/idsia/scenarios/Main.java" />
+        <option value="$PROJECT_DIR$/src/ch/idsia/agents/OwnGAAgent.java" />
+        <option value="$PROJECT_DIR$/src/ch/idsia/agents/GGAgent.java" />
+        <option value="$PROJECT_DIR$/src/ch/idsia/agents/GAAgent.java" />
+        <option value="$PROJECT_DIR$/src/ch/idsia/agents/controllers/ForwardJumpingAgent.java" />
         <option value="$PROJECT_DIR$/src/ch/idsia/scenarios/MainTask3.java" />
+        <option value="$PROJECT_DIR$/src/ch/idsia/scenarios/Play.java" />
+        <option value="$PROJECT_DIR$/src/ch/idsia/scenarios/champ/LearningTrack.java" />
+        <option value="$PROJECT_DIR$/src/ch/idsia/agents/OwnGGAgent.java" />
+        <option value="$PROJECT_DIR$/src/ch/idsia/agents/LearningWithGA.java" />
       </list>
     </option>
   </component>
@@ -155,8 +300,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="width" value="1440" />
-    <option name="height" value="900" />
+    <option name="x" value="1440" />
+    <option name="width" value="1920" />
+    <option name="height" value="1080" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -192,9 +338,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -275,32 +420,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="scenarios" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="oldscenarios" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="marioAI" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="marioAI" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="idsia" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="agents" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -331,34 +450,84 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope">
+        <subPane subId="Project Files">
           <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="marioAI" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="marioAI" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            <PATH_ELEMENT USER_OBJECT="marioAI">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="idsia" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            <PATH_ELEMENT USER_OBJECT="marioAI">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="agents" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            <PATH_ELEMENT USER_OBJECT="src">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            <PATH_ELEMENT USER_OBJECT="ch/idsia">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="human" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="marioAI">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="src">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="ch/idsia">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="agents">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="marioAI">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="src">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="ch/idsia">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="agents">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="controllers">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -368,7 +537,6 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="FullScreen" value="true" />
     <property name="settings.editor.selected.configurable" value="Errors" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
@@ -379,13 +547,14 @@
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
+    <property name="FullScreen" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/ch/idsia/agents/controllers" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.MainTask2">
+  <component name="RunManager" selected="Application.LearningTrack">
     <configuration default="false" name="MainTask3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -414,49 +583,9 @@
         </pattern>
       </extension>
       <option name="MAIN_CLASS_NAME" value="ch.idsia.scenarios.champ.LearningTrack" />
-      <option name="VM_PARAMETERS" value="-Xmx102400m" />
+      <option name="VM_PARAMETERS" value="-Xmx16384m" />
       <option name="PROGRAM_PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="marioAI" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="false" name="MainRun" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="ch.idsia.scenarios.oldscenarios.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="ch.idsia.scenarios.oldscenarios.MainRun" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="marioAI" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="false" name="MainTask4_1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="ch.idsia.scenarios.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="ch.idsia.scenarios.MainTask4_1" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="ENABLE_SWING_INSPECTOR" value="false" />
@@ -474,6 +603,46 @@
         </pattern>
       </extension>
       <option name="MAIN_CLASS_NAME" value="ch.idsia.scenarios.MainTask2" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="marioAI" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="Play" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="ch.idsia.scenarios.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="ch.idsia.scenarios.Play" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="marioAI" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="ch.idsia.scenarios.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="ch.idsia.scenarios.Main" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -869,22 +1038,25 @@
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Application.MainTask3" />
       <item index="1" class="java.lang.String" itemvalue="Application.LearningTrack" />
-      <item index="2" class="java.lang.String" itemvalue="Application.MainRun" />
-      <item index="3" class="java.lang.String" itemvalue="Application.MainTask4_1" />
-      <item index="4" class="java.lang.String" itemvalue="Application.MainTask2" />
+      <item index="2" class="java.lang.String" itemvalue="Application.MainTask2" />
+      <item index="3" class="java.lang.String" itemvalue="Application.Play" />
+      <item index="4" class="java.lang.String" itemvalue="Application.Main" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.MainTask2" />
-        <item index="1" class="java.lang.String" itemvalue="Application.MainTask3" />
-        <item index="2" class="java.lang.String" itemvalue="Application.MainTask4_1" />
-        <item index="3" class="java.lang.String" itemvalue="Application.LearningTrack" />
-        <item index="4" class="java.lang.String" itemvalue="Application.MainRun" />
+        <item index="0" class="java.lang.String" itemvalue="Application.LearningTrack" />
+        <item index="1" class="java.lang.String" itemvalue="Application.Play" />
+        <item index="2" class="java.lang.String" itemvalue="Application.MainTask3" />
+        <item index="3" class="java.lang.String" itemvalue="Application.Main" />
+        <item index="4" class="java.lang.String" itemvalue="Application.MainTask2" />
       </list>
     </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
+  </component>
+  <component name="StructureViewFactory">
+    <option name="ACTIVE_ACTIONS" value=",SHOW_PROPERTIES" />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -895,35 +1067,36 @@
       <updated>1507005037467</updated>
       <workItem from="1507005045629" duration="1364000" />
       <workItem from="1507007408445" duration="49678000" />
-      <workItem from="1507270024322" duration="20982000" />
+      <workItem from="1507270024322" duration="27805000" />
+      <workItem from="1507605593303" duration="18723000" />
+      <workItem from="1507685257629" duration="60000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="72024000" />
+    <option name="totallyTimeSpent" value="97630000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <frame x="1440" y="0" width="1920" height="1080" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26987952" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.40120482" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.48795182" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2553648" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26144835" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24973376" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -933,9 +1106,41 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26987952" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32891566" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32871288" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24973376" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26987952" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4009901" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19275825" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32871288" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="processedProjectFiles" value="true" />
@@ -954,6 +1159,24 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/ch/idsia/scenarios/champ/LearningTrack.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2580">
+          <caret line="203" column="0" lean-forward="true" selection-start-line="203" selection-start-column="0" selection-end-line="203" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ch/idsia/scenarios/Play.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="65" column="49" lean-forward="false" selection-start-line="65" selection-start-column="49" selection-end-line="65" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/ch/idsia/scenarios/MainTask3.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -990,12 +1213,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="540">
           <caret line="69" column="32" lean-forward="false" selection-start-line="69" selection-start-column="32" selection-end-line="69" selection-end-column="32" />
-          <folding>
-            <element signature="e#0#3402#0" expanded="false" />
-            <element signature="imports" expanded="false" />
-            <element signature="e#2356#2357#0" expanded="false" />
-            <element signature="e#2393#2394#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1089,28 +1306,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ch/idsia/agents/controllers/ScaredShooty.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="62" column="34" lean-forward="true" selection-start-line="62" selection-start-column="34" selection-end-line="62" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ch/idsia/agents/controllers/RandomAgent.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="280">
           <caret line="49" column="25" lean-forward="true" selection-start-line="49" selection-start-column="25" selection-end-line="49" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ch/idsia/scenarios/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="50" column="20" lean-forward="true" selection-start-line="50" selection-start-column="20" selection-end-line="50" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1135,14 +1334,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ch/idsia/tools/EvaluationInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="41">
-          <caret line="97" column="7" lean-forward="false" selection-start-line="97" selection-start-column="7" selection-end-line="97" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ch/idsia/scenarios/champ/GamePlayTrack.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
@@ -1157,13 +1348,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ch/idsia/scenarios/Play.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="10">
-          <caret line="48" column="19" lean-forward="false" selection-start-line="48" selection-start-column="19" selection-end-line="48" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ch/idsia/tools/GameViewer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-69">
@@ -1171,14 +1355,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/LearningWithGA-2017-10-04_19-22-36.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-16535">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/LearningWithGA-2017-10-04_19-22-36.xml" />
     <entry file="file://$PROJECT_DIR$/src/ch/idsia/scenarios/oldscenarios/MainRun.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1140">
@@ -1187,24 +1364,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ch/idsia/agents/GAAgent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="25" column="28" lean-forward="false" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ch/idsia/benchmark/tasks/LearningTask.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="540">
           <caret line="69" column="32" lean-forward="false" selection-start-line="69" selection-start-column="32" selection-end-line="69" selection-end-column="32" />
-          <folding>
-            <element signature="e#0#3402#0" expanded="false" />
-            <element signature="imports" expanded="false" />
-            <element signature="e#2356#2357#0" expanded="false" />
-            <element signature="e#2393#2394#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1212,20 +1375,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="51" column="15" lean-forward="false" selection-start-line="51" selection-start-column="15" selection-end-line="51" selection-end-column="15" />
-          <folding>
-            <element signature="e#0#4794#0" expanded="false" />
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ch/idsia/agents/controllers/BasicMarioAIAgent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="930">
-          <caret line="89" column="0" lean-forward="false" selection-start-line="89" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
-          <folding>
-            <element signature="e#3409#3410#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1237,16 +1386,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ch/idsia/agents/controllers/OwnAgent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-90">
-          <caret line="70" column="25" lean-forward="true" selection-start-line="70" selection-start-column="25" selection-end-line="70" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ch/idsia/agents/controllers/OwnAgent2.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-60">
@@ -1255,37 +1394,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ch/idsia/agents/LearningWithGA.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1215">
-          <caret line="94" column="31" lean-forward="false" selection-start-line="94" selection-start-column="31" selection-end-line="94" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ch/idsia/agents/controllers/TimingAgent.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="343">
           <caret line="67" column="0" lean-forward="false" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ch/idsia/scenarios/champ/LearningTrack.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="415">
-          <caret line="100" column="30" lean-forward="false" selection-start-line="100" selection-start-column="30" selection-end-line="100" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ch/idsia/agents/controllers/ForwardJumpingAgent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="41" column="13" lean-forward="false" selection-start-line="41" selection-start-column="13" selection-end-line="41" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1297,26 +1409,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ch/idsia/scenarios/MainTask3.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="51" column="76" lean-forward="false" selection-start-line="51" selection-start-column="76" selection-end-line="51" selection-end-column="76" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ch/idsia/agents/controllers/OwnAgentTask3.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-735">
-          <caret line="54" column="0" lean-forward="false" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ch/idsia/agents/controllers/OwnAgent3.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-495">
@@ -1325,13 +1417,142 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ch/idsia/agents/controllers/OwnAgentTask2.java">
+    <entry file="file://$PROJECT_DIR$/src/ch/idsia/agents/controllers/OwnAgentTask3.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+        <state relative-caret-position="-590">
+          <caret line="54" column="0" lean-forward="false" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1016#1028#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ch/idsia/agents/controllers/OwnAgentTask2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="7" column="3" lean-forward="true" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ch/idsia/agents/controllers/BasicMarioAIAgent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="870">
+          <caret line="85" column="0" lean-forward="true" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
+          <folding>
+            <element signature="e#3535#3536#0" expanded="false" />
+            <element signature="e#3561#3562#0" expanded="false" />
+            <element signature="e#5917#5918#0" expanded="false" />
+            <element signature="e#5944#5945#0" expanded="false" />
+            <element signature="e#5984#5985#0" expanded="false" />
+            <element signature="e#6016#6017#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ch/idsia/scenarios/champ/LearningTrackMC.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="591">
+          <caret line="79" column="0" lean-forward="false" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ch/idsia/agents/learning/OwnGAAgent.java" />
+    <entry file="file://$PROJECT_DIR$/src/ch/idsia/agents/controllers/ScaredShooty.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="103">
+          <caret line="47" column="28" lean-forward="true" selection-start-line="47" selection-start-column="28" selection-end-line="47" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ch/idsia/agents/controllers/OwnAgent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="95" column="42" lean-forward="false" selection-start-line="95" selection-start-column="42" selection-end-line="95" selection-end-column="42" />
+          <folding>
+            <element signature="e#0#5896#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ch/idsia/agents/controllers/ForwardJumpingAgent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="307">
+          <caret line="53" column="53" lean-forward="false" selection-start-line="53" selection-start-column="53" selection-end-line="53" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ch/idsia/agents/GAAgent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2040">
+          <caret line="145" column="25" lean-forward="false" selection-start-line="145" selection-start-column="25" selection-end-line="145" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ch/idsia/tools/EvaluationInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1050">
+          <caret line="102" column="11" lean-forward="false" selection-start-line="102" selection-start-column="11" selection-end-line="102" selection-end-column="11" />
+          <folding>
+            <element signature="e#4959#4960#0" expanded="true" />
+            <element signature="e#5022#5023#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ch/idsia/scenarios/MainTask3.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="46" column="88" lean-forward="false" selection-start-line="46" selection-start-column="88" selection-end-line="46" selection-end-column="88" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ch/idsia/scenarios/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="63" column="40" lean-forward="false" selection-start-line="63" selection-start-column="40" selection-end-line="63" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ch/idsia/scenarios/Play.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="66" column="0" lean-forward="false" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ch/idsia/scenarios/champ/LearningTrack.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2880">
+          <caret line="223" column="0" lean-forward="false" selection-start-line="223" selection-start-column="0" selection-end-line="223" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ch/idsia/agents/LearningWithGA.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="35" column="28" lean-forward="false" selection-start-line="35" selection-start-column="28" selection-end-line="35" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ch/idsia/agents/OwnGGAgent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="24" column="28" lean-forward="false" selection-start-line="24" selection-start-column="28" selection-end-line="24" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

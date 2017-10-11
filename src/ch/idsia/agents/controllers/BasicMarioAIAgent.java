@@ -38,146 +38,140 @@ import ch.idsia.tools.EvaluationInfo;
  * Time: 12:30:41 AM
  * Package: ch.idsia.agents.controllers;
  */
-public class BasicMarioAIAgent implements Agent
-{
-protected boolean action[] = new boolean[Environment.numberOfKeys];
-protected String name = "Instance_of_BasicAIAgent._Change_this_name";
+public class BasicMarioAIAgent implements Agent {
+    protected boolean action[] = new boolean[Environment.numberOfKeys];
+    protected String name = "Instance_of_BasicAIAgent._Change_this_name";
 
-/*final*/
-protected byte[][] levelScene;
-/*final */
-protected byte[][] enemies;
-protected byte[][] mergedObservation;
+    /*final*/
+    protected byte[][] levelScene;
+    /*final */
+    protected byte[][] enemies;
+    protected byte[][] mergedObservation;
 
-protected float[] marioFloatPos = null;
-protected float[] enemiesFloatPos = null;
+    protected float[] marioFloatPos = null;
+    protected float[] enemiesFloatPos = null;
 
-protected int[] marioState = null;
+    protected int[] marioState = null;
 
-protected int marioStatus;
-protected int marioMode;
-protected boolean isMarioOnGround;
-protected boolean isMarioAbleToJump;
-protected boolean isMarioAbleToShoot;
-protected boolean isMarioCarrying;
-protected int getKillsTotal;
-protected int getKillsByFire;
-protected int getKillsByStomp;
-protected int getKillsByShell;
+    protected int marioStatus;
+    protected int marioMode;
+    protected boolean isMarioOnGround;
+    protected boolean isMarioAbleToJump;
+    protected boolean isMarioAbleToShoot;
+    protected boolean isMarioCarrying;
+    protected int getKillsTotal;
+    protected int getKillsByFire;
+    protected int getKillsByStomp;
+    protected int getKillsByShell;
 
-protected int receptiveFieldWidth;
-protected int receptiveFieldHeight;
-protected int marioEgoRow;
-protected int marioEgoCol;
+    protected int receptiveFieldWidth;
+    protected int receptiveFieldHeight;
+    protected int marioEgoRow;
+    protected int marioEgoCol;
 
-protected int distancePassedCells;
-protected int distancePassedPhys;
-protected int flowersDevoured;
-protected int mushroomsDevoured;
-protected int coinsGained;
-protected int timeLeft;
-protected int timeSpent;
-protected int hiddenBlocksFound;
+    protected int distancePassedCells;
+    protected int distancePassedPhys;
+    protected int flowersDevoured;
+    protected int mushroomsDevoured;
+    protected int coinsGained;
+    protected int timeLeft;
+    protected int timeSpent;
+    protected int hiddenBlocksFound;
 
-// values of these variables could be changed during the Agent-Environment interaction.
+    // values of these variables could be changed during the Agent-Environment interaction.
 // Use them to get more detailed or less detailed description of the level.
 // for information see documentation for the benchmark <link: marioai.org/marioaibenchmark/zLevels
-int zLevelScene = 1;
-int zLevelEnemies = 0;
+    int zLevelScene = 1;
+    int zLevelEnemies = 0;
 
-public BasicMarioAIAgent(String s)
-{
-    setName(s);
-}
+    public BasicMarioAIAgent(String s) {
+        setName(s);
+    }
 
-public boolean[] getAction()
-{
-    return new boolean[Environment.numberOfKeys];
+    public boolean[] getAction() {
+        return new boolean[Environment.numberOfKeys];
 
-}
+    }
 
-public void integrateObservation(Environment environment)
-{
-    levelScene = environment.getLevelSceneObservationZ(zLevelScene);
-    enemies = environment.getEnemiesObservationZ(zLevelEnemies);
-    mergedObservation = environment.getMergedObservationZZ(1, 0);
+    public void integrateObservation(Environment environment) {
+        levelScene = environment.getLevelSceneObservationZ(zLevelScene);
+        enemies = environment.getEnemiesObservationZ(zLevelEnemies);
+        mergedObservation = environment.getMergedObservationZZ(1, 0);
 
-    this.marioFloatPos = environment.getMarioFloatPos();
-    this.enemiesFloatPos = environment.getEnemiesFloatPos();
-    this.marioState = environment.getMarioState();
+        this.marioFloatPos = environment.getMarioFloatPos();
+        this.enemiesFloatPos = environment.getEnemiesFloatPos();
+        this.marioState = environment.getMarioState();
 
-    receptiveFieldWidth = environment.getReceptiveFieldWidth();
-    receptiveFieldHeight = environment.getReceptiveFieldHeight();
+        receptiveFieldWidth = environment.getReceptiveFieldWidth();
+        receptiveFieldHeight = environment.getReceptiveFieldHeight();
 
-    // It also possible to use direct methods from Environment interface.
-    //
-    marioStatus = marioState[0];
-    marioMode = marioState[1];
-    isMarioOnGround = marioState[2] == 1;
-    isMarioAbleToJump = marioState[3] == 1;
-    isMarioAbleToShoot = marioState[4] == 1;
-    isMarioCarrying = marioState[5] == 1;
-    getKillsTotal = marioState[6];
-    getKillsByFire = marioState[7];
-    getKillsByStomp = marioState[8];
-    getKillsByShell = marioState[9];
-    
-    EvaluationInfo evaluationInfo = environment.getEvaluationInfo();
-    int[] evaluationInfoArr = evaluationInfo.toIntArray();
-    distancePassedCells = evaluationInfoArr[0];
-    distancePassedPhys = evaluationInfoArr[1];
-    flowersDevoured = evaluationInfoArr[2];
-    mushroomsDevoured = evaluationInfoArr[9];
-    coinsGained = evaluationInfoArr[10];
-    timeLeft = evaluationInfoArr[11];
-    timeSpent = evaluationInfoArr[12];
-    hiddenBlocksFound = evaluationInfoArr[13];
-}
+        // It also possible to use direct methods from Environment interface.
+        //
+        marioStatus = marioState[0];
+        marioMode = marioState[1];
+        isMarioOnGround = marioState[2] == 1;
+        isMarioAbleToJump = marioState[3] == 1;
+        isMarioAbleToShoot = marioState[4] == 1;
+        isMarioCarrying = marioState[5] == 1;
+        getKillsTotal = marioState[6];
+        getKillsByFire = marioState[7];
+        getKillsByStomp = marioState[8];
+        getKillsByShell = marioState[9];
 
-public void giveIntermediateReward(float intermediateReward)
-{
+        EvaluationInfo evaluationInfo = environment.getEvaluationInfo();
+        int[] evaluationInfoArr = evaluationInfo.toIntArray();
+        distancePassedCells = evaluationInfoArr[0];
+        distancePassedPhys = evaluationInfoArr[1];
+        flowersDevoured = evaluationInfoArr[2];
+        mushroomsDevoured = evaluationInfoArr[9];
+        coinsGained = evaluationInfoArr[10];
+        timeLeft = evaluationInfoArr[11];
+        timeSpent = evaluationInfoArr[12];
+        hiddenBlocksFound = evaluationInfoArr[13];
+    }
 
-}
+    public void giveIntermediateReward(float intermediateReward) {
 
-public void reset()
-{
-    action = new boolean[Environment.numberOfKeys];// Empty action
-}
+    }
 
-public void setObservationDetails(final int rfWidth, final int rfHeight, final int egoRow, final int egoCol)
-{
-    receptiveFieldWidth = rfWidth;
-    receptiveFieldHeight = rfHeight;
+    public void reset() {
+        action = new boolean[Environment.numberOfKeys];// Empty action
+    }
 
-    marioEgoRow = egoRow;
-    marioEgoCol = egoCol;
-}
+    public void setObservationDetails(final int rfWidth, final int rfHeight, final int egoRow, final int egoCol) {
+        receptiveFieldWidth = rfWidth;
+        receptiveFieldHeight = rfHeight;
 
-@Deprecated
-public boolean[] getAction(Environment observation)
-{
-    return new boolean[Environment.numberOfKeys]; // Empty action
-}
+        marioEgoRow = egoRow;
+        marioEgoCol = egoCol;
+    }
 
-public String getName() { return name; }
+    @Deprecated
+    public boolean[] getAction(Environment observation) {
+        return new boolean[Environment.numberOfKeys]; // Empty action
+    }
 
-public void setName(String Name) { this.name = Name; }
+    public String getName() {
+        return name;
+    }
 
-public int getEnemiesCellValue(int x, int y)
-{
-    if (x < 0 || x >= levelScene.length || y < 0 || y >= levelScene[0].length)
-        return 0;
+    public void setName(String Name) {
+        this.name = Name;
+    }
 
-    return enemies[x][y];
-}
+    public int getEnemiesCellValue(int x, int y) {
+        if (x < 0 || x >= levelScene.length || y < 0 || y >= levelScene[0].length)
+            return 0;
 
-public int getReceptiveFieldCellValue(int x, int y)
-{
-    if (x < 0 || x >= levelScene.length || y < 0 || y >= levelScene[0].length)
-        return 0;
+        return enemies[x][y];
+    }
 
-    return levelScene[x][y];
-}
+    public int getReceptiveFieldCellValue(int x, int y) {
+        if (x < 0 || x >= levelScene.length || y < 0 || y >= levelScene[0].length)
+            return 0;
+
+        return levelScene[x][y];
+    }
 //    public void integrateObservation(int[] serializedLevelSceneObservationZ, int[] serializedEnemiesObservationZ, float[] marioFloatPos, float[] enemiesFloatPos, int[] marioState)
 //    {
 //        int k = 0;
