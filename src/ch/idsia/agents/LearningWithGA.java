@@ -22,8 +22,10 @@ public class LearningWithGA implements LearningAgent {
     /* エポック数 */
     private final int EndEpoch = 50;
 
-    private final float mutateRate = 0.1f;
+    private final float mutateRate = 0.3f;
     final float crossRate = 0.5f;
+
+    OwnGGAgent agent = new OwnGGAgent();
 
     //	private LearningTask task = null;
     String name = "LearningWithGA";
@@ -31,7 +33,7 @@ public class LearningWithGA implements LearningAgent {
     private Agent bestAgent;
     private String args;
     /* 評価時最大値保持用変数 */
-    float fmax;
+    private float fmax;
 
     Random r = new Random();
 
@@ -139,9 +141,10 @@ public class LearningWithGA implements LearningAgent {
 
 			/* 評価値(距離)をセット */
             EvaluationInfo evaluationInfo = basicTask.getEvaluationInfo();
-//            agents[i].setFitness(evaluationInfo.computeWeightedFitness());
-            agents[i].setFitness(evalFitness(evaluationInfo));
+            agents[i].setFitness(evaluationInfo.computeWeightedFitness());
+//            agents[i].setFitness(evalFitness(evaluationInfo));
 //            agents[i].setFitness(evaluationInfo.computeBasicFitness());
+//            agents[i].setFitness(evaluationInfo.distancePassedCells);
             agents[i].setDistance(evaluationInfo.distancePassedCells);
         }
 		/* 降順にソートする */
@@ -224,7 +227,8 @@ public class LearningWithGA implements LearningAgent {
     /* 交叉 */
     private void cross(OwnGGAgent[] nextagents, int[] parentsGene, int i) {
 
-        int geneLength = (1 << 16);
+        int geneLength = (1 << agent.inputNum);
+//        int geneLength = 4096 * 200;
 
         int sum = parentsGene[0] + parentsGene[1];
         float roulette = 1 - (float) parentsGene[0] / (float) sum;
@@ -283,7 +287,8 @@ public class LearningWithGA implements LearningAgent {
 //		float mutation = popsize * mutateRate;	//突然変異させる個体数(float型)を設定(現在10個体)
         int mutationInt = (int) Math.floor(popsize * mutateRate);    //突然変異させる個体数(int型)
 //		float mutation3 = (1 << 16) * mutateRate;	//突然変異させる遺伝子座の個数(float型)
-        int mutateGeneInt = (int) Math.floor((1 << 16) * mutateRate);    //突然変異させる遺伝子座の個数(int型)(65536)
+        int mutateGeneInt = (int) Math.floor((1 << agent.inputNum) * mutateRate);    //突然変異させる遺伝子座の個数(int型)(65536)
+//        int mutateGeneInt = (int) Math.floor(4096 * 200 * mutateRate);    //突然変異させる遺伝子座の個数(int型)(65536)
 
         int[] ran = new int[mutationInt];        //乱数格納用配列
         int geneRan;
@@ -298,7 +303,8 @@ public class LearningWithGA implements LearningAgent {
             for (int j = 0; j < mutationInt; j++) {
                 if (i == ran[j]) {    //突然変異させる個体を発見したら
                     for (int k = 0; k < mutateGeneInt; k++) {    //全体の10%を突然変異させる
-                        geneRan = r.nextInt(1 << 16);
+                        geneRan = r.nextInt(1 << agent.inputNum);
+//                        geneRan = r.nextInt(4096 * 200);
                         agents[i].setGene(geneRan, (byte) r.nextInt(num));
                     }
                 }
@@ -311,15 +317,12 @@ public class LearningWithGA implements LearningAgent {
         String fileName = name + "-"
                 + GlobalOptions.getTimeStamp() + ".xml";
         Easy.save(this.bestAgent, fileName);
-//        Easy.save(agents[0], fileName);
     }
 
     /* 評価用関数 */
     private int evalFitness(EvaluationInfo evaluationInfo) {
         return evaluationInfo.distancePassedPhys
-                + evaluationInfo.timeLeft * 10
-                + evaluationInfo.killsTotal * 10
-                + evaluationInfo.coinsGained * 10;
+                + evaluationInfo.timeLeft;
     }
 
     @Override

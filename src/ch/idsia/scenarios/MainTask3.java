@@ -42,10 +42,10 @@ public final class MainTask3 {
     public static void main(String[] args) {
         final MarioAIOptions marioAIOptions = new MarioAIOptions(args);
 
-//        final Agent agent = new OwnAgentTask3();
+        final Agent agent = new OwnAgentTask3();
 //        final Agent agent = new OwnAgent2();
-        AgentsPool.addAgent(AgentsPool.loadAgent("LearningWithGA-2017-10-10_16-20-27.xml", false));
-        Agent agent = AgentsPool.getCurrentAgent();
+//        AgentsPool.addAgent(AgentsPool.loadAgent("LearningWithGA-2017-10-10_16-20-27.xml", false));
+//        Agent agent = AgentsPool.getCurrentAgent();
 
         marioAIOptions.setAgent(agent);
 //        marioAIOptions.setFPS(15);

@@ -27,6 +27,7 @@
 
 package ch.idsia.scenarios;
 
+import ch.idsia.agents.AgentsPool;
 import ch.idsia.agents.controllers.ForwardJumpingAgent;
 import ch.idsia.agents.controllers.OwnAgent;
 import ch.idsia.agents.controllers.ScaredShooty;
@@ -40,28 +41,36 @@ import ch.idsia.agents.Agent;
  */
 public final class Main {
     public static void main(String[] args) {
+
         final MarioAIOptions marioAIOptions = new MarioAIOptions(args);
 
+        /* MainTask4_2.java */
+        marioAIOptions.setArgs("-lco off -lb on -le off -lhb off -lg on -ltb on -lhs off -lca on -lde on -ld 5 -ls 133829");
+
         // ジャンプエージェント
-        final Agent agent = new ForwardJumpingAgent();
+//        final Agent agent = new ForwardJumpingAgent();
 
         // 自作エージェント
 //        final Agent agent = new OwnAgent();
 
 //        final Agent agent = new ScaredShooty();
+
+        AgentsPool.addAgent(AgentsPool.loadAgent("LearningWithGA-2017-10-14_01-53-51.xml", false));
+        Agent agent = AgentsPool.getCurrentAgent();
+
         // エージェントを設定
         marioAIOptions.setAgent(agent);
 
         // 難易度
-        int d = 10;
-        marioAIOptions.setLevelDifficulty(d);
+//        int d = 10;
+//        marioAIOptions.setLevelDifficulty(d);
 
         // ステージ
-        int seed = 50;
-        marioAIOptions.setLevelRandSeed(seed);
+//        int seed = 50;
+//        marioAIOptions.setLevelRandSeed(seed);
 
         // 敵
-        marioAIOptions.setEnemies("ggkrk");
+//        marioAIOptions.setEnemies("ggkrk");
 
         final BasicTask basicTask = new BasicTask(marioAIOptions);
         basicTask.setOptionsAndReset(marioAIOptions);

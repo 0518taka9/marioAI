@@ -5,6 +5,13 @@ import ch.idsia.benchmark.mario.engine.GeneralizerLevelScene;
 import ch.idsia.benchmark.mario.engine.sprites.Mario;
 import ch.idsia.benchmark.mario.environments.Environment;
 
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Scanner;
+
 /**
  * Created by nakatsukatakahiro on 2017/10/06.
  */
@@ -39,9 +46,9 @@ public class OwnAgentTask2 extends BasicMarioAIAgent implements Agent {
     private boolean isObstacle(int r, int c) {
         // (r, c)に障害物があればtrueを返す
 
-        return getReceptiveFieldCellValue(r, c)  == GeneralizerLevelScene.BRICK
-                || getReceptiveFieldCellValue(r, c)  == GeneralizerLevelScene.BORDER_CANNOT_PASS_THROUGH
-                || getReceptiveFieldCellValue(r, c)  == GeneralizerLevelScene.FLOWER_POT_OR_CANNON;
+        return getReceptiveFieldCellValue(r, c) == GeneralizerLevelScene.BRICK
+                || getReceptiveFieldCellValue(r, c) == GeneralizerLevelScene.BORDER_CANNOT_PASS_THROUGH
+                || getReceptiveFieldCellValue(r, c) == GeneralizerLevelScene.FLOWER_POT_OR_CANNON;
     }
 
     private boolean isHole(int r, int c) {
@@ -53,10 +60,5 @@ public class OwnAgentTask2 extends BasicMarioAIAgent implements Agent {
             i++;
         }
         return true;
-    }
-
-    private boolean isNothing(int r, int c) {
-        // (r, c)に何もなければtrue
-        return getReceptiveFieldCellValue(r, c) == 0;
     }
 }
