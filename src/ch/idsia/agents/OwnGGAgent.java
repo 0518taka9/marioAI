@@ -100,43 +100,13 @@ public class OwnGGAgent extends BasicMarioAIAgent
 
         int r = marioEgoRow;
         int c = marioEgoCol;
-//
         int input = 0;
+
+        /* 遺伝アルゴリズム */
 
 		/* 環境情報から input を決定
          * 上位ビットから周辺近傍の状態を格納していく
 		 */
-
-        // 穴があるかどうか判定
-//        input += ((isObstacle(8, 1) + isObstacle(8, 2) + isObstacle(8, 3))
-//                == 3 ? 1 : 0) * (1 << 22);
-
-        // 上2x3マス
-//        input += isObstacle(-3, 0) * (1 << 23);
-//        input += isObstacle(-3, 1) * (1 << 22);
-//        input += isObstacle(-3, 2) * (1 << 22);
-//        input += isObstacle(-2, 0) * (1 << 21);
-//        input += isObstacle(-2, 1) * (1 << 20);
-//        input += isObstacle(-2, 2) * (1 << 19);
-
-
-        // 3マス先
-//        input += isObstacle(0, 3) * (1 << 21);
-//        input += isObstacle(-1, 3) * (1 << 20);
-//        input += isObstacle(1, 3) * (1 << 19);
-
-        // 2マス先
-//        input += isObstacle(0, 2) * (1 << 21);
-//        input += isObstacle(-1, 2) * (1 << 20);
-//        input += isObstacle(1, 2) * (1 << 19);
-//
-//        input += isEnemy(0, 2) * (1 << 18);
-//        input += isEnemy(-1, 2) * (1 << 17);
-//        input += isEnemy(-2, 2) * (1 << 16);
-//        input += isEnemy(-2, 1) * (1 << 23);
-//
-        // 下がブロックかどうか
-//        input += isBrick(1, 0) * (1 << 16);
 
 		/* enemies情報(上位7桁) */
         input += isEnemy(-1, -1) * (1 << 15);
@@ -146,25 +116,8 @@ public class OwnGGAgent extends BasicMarioAIAgent
         input += isEnemy(-1, 1) * (1 << 11);
         input += isEnemy(0, 1) * (1 << 10);
         input += isEnemy(1, 1) * (1 << 9);
-//
-		/* levelScene情報 */
 
-//        input += isObstacle(-3, 2) * (1 << 19);
-//        input += isObstacle(-2, 2) * (1 << 18);
-//        input += isObstacle(-1, 2) * (1 << 17);
-//        input += isObstacle(0, 2) * (1 << 16);
-//        input += isObstacle(1, 2) * (1 << 15);
-//        input += isObstacle(2, 2) * (1 << 14);
-//
-//        input += isObstacle(-3, 1) * (1 << 13);
-//        input += isObstacle(-2, 1) * (1 << 12);
-//        input += isObstacle(2, 1) * (1 << 11);
-//
-//        input += isObstacle(-3, 0) * (1 << 10);
-//        input += isObstacle(-2, 0) * (1 << 9);
-
-
-//         周囲7マス
+        /* levelScene情報 */
         input += isObstacle(-1, -1) * (1 << 8);
         input += isObstacle(0, -1) * (1 << 7);
         input += isObstacle(1, -1) * (1 << 6);
@@ -183,6 +136,9 @@ public class OwnGGAgent extends BasicMarioAIAgent
             act /= 2;
         }
 
+        /* ルールベース */
+
+        // 左を押していなければ右を押す
         if (!action[Mario.KEY_LEFT])
             action[Mario.KEY_RIGHT] = true;
 
@@ -199,18 +155,17 @@ public class OwnGGAgent extends BasicMarioAIAgent
             action[Mario.KEY_JUMP] = isMarioAbleToJump;
         }
 
-
-        // 崖を超えるための記述
-        if (distancePassedCells >= 95 && distancePassedCells < 127) {
-            action[Mario.KEY_RIGHT] = true;
-            action[Mario.KEY_SPEED] = false;
-        }
-        if (distancePassedCells >= 98 && distancePassedCells < 127) {
-            action[Mario.KEY_JUMP] = isMarioAbleToJump || !isMarioOnGround;
-        }
-        if (distancePassedCells >= 105 && distancePassedCells < 127) {
-            action[Mario.KEY_SPEED] = true;
-        }
+        // 4-1で崖を超えるための記述
+//        if (distancePassedCells >= 95 && distancePassedCells < 127) {
+//            action[Mario.KEY_RIGHT] = true;
+//            action[Mario.KEY_SPEED] = false;
+//        }
+//        if (distancePassedCells >= 98 && distancePassedCells < 127) {
+//            action[Mario.KEY_JUMP] = isMarioAbleToJump || !isMarioOnGround;
+//        }
+//        if (distancePassedCells >= 105 && distancePassedCells < 127) {
+//            action[Mario.KEY_SPEED] = true;
+//        }
 
         return action;
     }
