@@ -73,19 +73,14 @@ public final class LearningTrack {
     /* LearningAgentの初期化 */
         learningAgent.init();
 
-//    for(int i=0 ; i<LearningTask.getEvaluationQuota() ; i++){	//forで繰り返す???
-//    	System.out.println("世代 : "+i);
+    /* 学習の実行 */
         learningAgent.learn(); // launches the training process. numberOfTrials happen here
 
-//    }
-
+    /* BestAgentを取得 */
         Agent agent = learningAgent.getBestAgent(); // this agent will be evaluated
 
     /* 評価のvisualize */
         marioAIOptions.setVisualization(true);
-
-//    System.out.println("/*---------------------- finished learning --------------------*/");
-//    System.out.println("LearningTrack best agent = " + agent);
 
     /* AgentをmarioAIOptionsのAgentにセット */
         marioAIOptions.setAgent(agent);
@@ -94,12 +89,8 @@ public final class LearningTrack {
         BasicTask basicTask = new BasicTask(marioAIOptions);
         basicTask.setOptionsAndReset(marioAIOptions);
 
-
-        //System.out.println("basicTask = " + basicTask);
-        //System.out.println("agent = " + agent);
-
     /* １トラック終了後にスコアを画面に出力するか */
-        boolean verbose = false;
+        boolean verbose = true;
 
     /* 1トラック実行(制限時間を超えたらFalse)
      * 学習後のAgentを用いて，runSingleEpisodeメソッドで1回ステージを
@@ -134,71 +125,6 @@ public final class LearningTrack {
     /* Fitnessを返す */
         return f;
     }
-
-    private static int oldEval(MarioAIOptions marioAIOptions, LearningAgent learningAgent) {
-        boolean verbose = false;
-        float fitness = 0;
-        int disqualifications = 0;
-
-        marioAIOptions.setVisualization(false);
-        //final LearningTask learningTask = new LearningTask(marioAIOptions);
-        //learningTask.setAgent(learningAgent);
-        LearningTask task = new LearningTask(marioAIOptions);
-
-        learningAgent.newEpisode();
-        learningAgent.setLearningTask(task);
-        learningAgent.setEvaluationQuota(numberOfTrials);
-        learningAgent.init();
-
-        for (int i = 0; i < numberOfTrials; ++i) {
-            System.out.println("-------------------------------");
-            System.out.println(i + " trial");
-            //learningTask.reset(marioAIOptions);
-            task.setOptionsAndReset(marioAIOptions);
-        /* inform your agent that new episode is coming,
-         * pick up next representative in population.
-         */
-
-            //     learningAgent.learn();
-            task.runSingleEpisode(1);
-        /*if (!task.runSingleEpisode())  // make evaluation on an episode once
-        {
-            System.out.println("MarioAI: out of computational time per action!");
-            disqualifications++;
-            continue;
-        }*/
-
-            EvaluationInfo evaluationInfo = task.getEnvironment().getEvaluationInfo();
-            float f = evaluationInfo.computeWeightedFitness();
-            if (verbose) {
-                System.out.println("Intermediate SCORE = " + f + "; Details: " + evaluationInfo.toStringSingleLine());
-            }
-            // learn the reward
-            //learningAgent.giveReward(f);
-        }
-        // do some post processing if you need to. In general: select the Agent with highest score.
-        learningAgent.learn();
-        // perform the gameplay task on the same level
-        marioAIOptions.setVisualization(true);
-        Agent bestAgent = learningAgent.getBestAgent();
-        marioAIOptions.setAgent(bestAgent);
-        BasicTask basicTask = new BasicTask(marioAIOptions);
-        basicTask.setOptionsAndReset(marioAIOptions);
-//        basicTask.setAgent(bestAgent);
-        if (!basicTask.runSingleEpisode(1))  // make evaluation on the same episode once
-        {
-            System.out.println("MarioAI: out of computational time per action!");
-            disqualifications++;
-        }
-        EvaluationInfo evaluationInfo = basicTask.getEnvironment().getEvaluationInfo();
-        int f = evaluationInfo.computeWeightedFitness();
-        if (verbose) {
-            System.out.println("Intermediate SCORE = " + f + "; Details: " + evaluationInfo.toStringSingleLine());
-        }
-        System.out.println("LearningTrack final score = " + f);
-        return f;
-    }
-
 
     public static void main(String[] args) {
 
@@ -235,7 +161,6 @@ public final class LearningTrack {
 
 	/* 学習後の得点をfinalScoreに保存し画面へ出力 */
         float finalScore = LearningTrack.evaluateSubmission(marioAIOptions, learningAgent);
-
 
         System.out.println("finalScore = " + finalScore);
         System.exit(0);
