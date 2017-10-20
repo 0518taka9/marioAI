@@ -11,7 +11,7 @@ import java.util.Random;
 /* シフト演算子 x << y
 * xをyビットだけ左シフトする。空いた下位ビット(右側)には0を挿入。
 */
-public class OwnGGAgent extends BasicMarioAIAgent
+public class OwnGAAgent extends BasicMarioAIAgent
         implements Agent, Evolvable, Comparable, Cloneable {
 
     static String name = "GAAgent";
@@ -23,24 +23,20 @@ public class OwnGGAgent extends BasicMarioAIAgent
     public int fitness;
 
     /* 環境から取得する入力数 */
-    public int inputNum = 16;
+    public int inputNum = 19;
 
     /* 乱数用変数 r */
-    Random r = new Random();
+    private Random r = new Random();
 
     /* コンストラクタ */
-    public OwnGGAgent() {
+    public OwnGAAgent() {
 
         super(name);
 
 		/* 16ビットの入力なので，65536(=2^16)個用意する */
         gene = new byte[(1 << inputNum)];
-//        gene = new byte[4096 * 200];
 
-		/* 出力は32(=2^5)パターン */
-        int num = 1 << (Environment.numberOfKeys - 1);
-
-		/* geneの初期値は乱数(0から31)で取得 */
+		/* geneの初期化 */
         for (int i = 0; i < gene.length; i++) {
             switch (r.nextInt(8)) {
                 case 0:
@@ -69,14 +65,13 @@ public class OwnGGAgent extends BasicMarioAIAgent
                     break;
             }
         }
-
-		/* 評価値を0で初期化 */
+        /* 評価値を0で初期化 */
         fitness = 0;
     }
 
 	/* compfit()追加記述 */
 
-    int distance;
+    private int distance;
 
     public void setFitness(int fitness) {
         this.fitness = fitness;
@@ -88,19 +83,32 @@ public class OwnGGAgent extends BasicMarioAIAgent
 
     /* 降順にソート */
     public int compareTo(Object obj) {
-        OwnGGAgent otherUser = (OwnGGAgent) obj;
+        OwnGAAgent otherUser = (OwnGAAgent) obj;
         return -(this.fitness - otherUser.getFitness());
-//        return -(this.distance - otherUser.getDistance());
     }
 
 	/* compFit()追加記述ここまで */
 
+
+	int jumpCount = 0;
+	boolean jumping = false;
 
     public boolean[] getAction() {
 
         int r = marioEgoRow;
         int c = marioEgoCol;
         int input = 0;
+
+        // ジャンプ長押し
+        if (jumping) {
+            action[Mario.KEY_JUMP] = true;
+            jumpCount++;
+            if (jumpCount == 5) {
+                jumping = false;
+                jumpCount = 0;
+            }
+            return action;
+        }
 
         /* 遺伝アルゴリズム */
 
@@ -118,6 +126,11 @@ public class OwnGGAgent extends BasicMarioAIAgent
         input += isEnemy(1, 1) * (1 << 9);
 
         /* levelScene情報 */
+        // 4-2
+        input += isObstacle(-1, 2) * (1 << 18);
+        input += isObstacle(-2, 1) * (1 << 17);
+        input += isObstacle(-2, 2) * (1 << 16);
+
         input += isObstacle(-1, -1) * (1 << 8);
         input += isObstacle(0, -1) * (1 << 7);
         input += isObstacle(1, -1) * (1 << 6);
@@ -144,14 +157,18 @@ public class OwnGGAgent extends BasicMarioAIAgent
 
         // 目の前に障害物があればジャンプ
         if (isObstacle2(r, c + 1) || isObstacle2(r, c + 2)) {
-            action[Mario.KEY_JUMP] = isMarioAbleToJump || !isMarioOnGround;
+//            action[Mario.KEY_JUMP] = isMarioAbleToJump || !isMarioOnGround;
+            // 4-2
+            jumping = true;
         }
 
         // 目の前に穴があればジャンプ
         if (isHole(r, c + 1)) action[Mario.KEY_JUMP] = isMarioAbleToJump || !isMarioOnGround;
 
         // 目の前に敵がいる場合ジャンプで回避(右)
-        if (action[Mario.KEY_RIGHT] && getEnemiesCellValue(r, c + 1) != 0 || getReceptiveFieldCellValue(r, c + 2) != 0) {
+        if (action[Mario.KEY_RIGHT] && getEnemiesCellValue(r, c + 1) != 0
+                || getReceptiveFieldCellValue(r, c + 2) != 0
+                ) {
             action[Mario.KEY_JUMP] = isMarioAbleToJump;
         }
 
@@ -166,6 +183,22 @@ public class OwnGGAgent extends BasicMarioAIAgent
 //        if (distancePassedCells >= 105 && distancePassedCells < 127) {
 //            action[Mario.KEY_SPEED] = true;
 //        }
+
+        // 4-2で穴を超えるための記述
+        if (distancePassedCells >= 108 && distancePassedCells < 117) {
+            action[Mario.KEY_JUMP] = false;
+            action[Mario.KEY_RIGHT] = true;
+            action[Mario.KEY_SPEED] = true;
+            action[Mario.KEY_LEFT] = false;
+            action[Mario.KEY_DOWN] = false;
+        }
+        if (distancePassedCells >= 117 && distancePassedCells < 127) {
+            action[Mario.KEY_JUMP] = true;
+            action[Mario.KEY_RIGHT] = true;
+            action[Mario.KEY_SPEED] = true;
+            action[Mario.KEY_LEFT] = false;
+            action[Mario.KEY_DOWN] = false;
+        }
 
         return action;
     }
@@ -200,11 +233,11 @@ public class OwnGGAgent extends BasicMarioAIAgent
         return true;
     }
 
-    public byte getGene(int i) {
+    byte getGene(int i) {
         return gene[i];
     }
 
-    public void setGene(int j, byte gene) {
+    void setGene(int j, byte gene) {
         this.gene[j] = gene;
     }
 
@@ -224,15 +257,14 @@ public class OwnGGAgent extends BasicMarioAIAgent
     }
 
     @Override
-    public OwnGGAgent clone() {
+    public OwnGAAgent clone() {
 
-        OwnGGAgent res = null;
+        OwnGAAgent res;
         try {
-            res = (OwnGGAgent) super.clone();
+            res = (OwnGAAgent) super.clone();
         } catch (CloneNotSupportedException e) {
             throw new InternalError(e.toString());
         }
-
         return res;
     }
 

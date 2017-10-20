@@ -27,6 +27,7 @@
 
 package ch.idsia.scenarios;
 
+import ch.idsia.agents.AgentsPool;
 import ch.idsia.benchmark.tasks.BasicTask;
 import ch.idsia.tools.MarioAIOptions;
 import ch.idsia.agents.Agent;
@@ -42,7 +43,10 @@ public static void main(String[] args)
 {
     final MarioAIOptions marioAIOptions = new MarioAIOptions(args);
 
-    final Agent agent = new IgnoreObstacleAgent();
+//    AgentsPool.addAgent(AgentsPool.loadAgent("LearningWithGA-2017-10-20_23-25-19.xml", false));   //6466
+//    AgentsPool.addAgent(AgentsPool.loadAgent("LearningWithGA-2017-10-20_23-42-12.xml", false));   //6658
+//    AgentsPool.addAgent(AgentsPool.loadAgent("LearningWithGA-2017-10-21_00-22-00.xml", false));   //6482
+    Agent agent = AgentsPool.getCurrentAgent();
     marioAIOptions.setAgent(agent);
 
     marioAIOptions.setArgs("-lco off -lb on -le off -lhb off -lg on -ltb on -lhs off -lca on -lde on -ld 5 -ls 133829");

@@ -20,25 +20,20 @@ public class LearningWithGA implements LearningAgent {
     private final int bestnum = 2;
 
     /* エポック数 */
-    private final int EndEpoch = 50;
+    private final int EndEpoch = 200;
 
     private final float mutateRate = 0.3f;
-    final float crossRate = 0.5f;
 
-    OwnGGAgent agent = new OwnGGAgent();
+    OwnGAAgent agent = new OwnGAAgent();
 
-    //	private LearningTask task = null;
     String name = "LearningWithGA";
-    OwnGGAgent[] agents;
+    OwnGAAgent[] agents;
     private Agent bestAgent;
     private String args;
     /* 評価時最大値保持用変数 */
     private float fmax;
 
     Random r = new Random();
-
-	/* ゲーム諸データ取得用 */
-//	private EvaluationInfo localEvaluationInfo;
 
     /* 学習制限回数 */
     private long evaluationQuota;
@@ -51,9 +46,9 @@ public class LearningWithGA implements LearningAgent {
         fmax = 0;
 
 		/* 個体数分だけAgentを作成 */
-        agents = new OwnGGAgent[popsize];
+        agents = new OwnGAAgent[popsize];
         for (int i = 0; i < agents.length; i++) {
-            agents[i] = new OwnGGAgent();
+            agents[i] = new OwnGAAgent();
         }
 
 		/* agent[0] をbestAgentとして初期化 */
@@ -71,9 +66,9 @@ public class LearningWithGA implements LearningAgent {
 			/* 100個体の評価 */
 
             compFit();
-            OwnGGAgent[] nextagents = new OwnGGAgent[popsize];
+            OwnGAAgent[] nextagents = new OwnGAAgent[popsize];
             for (int i = 0; i < popsize; i++) {
-                nextagents[i] = new OwnGGAgent();
+                nextagents[i] = new OwnGAAgent();
             }
 
 
@@ -106,8 +101,6 @@ public class LearningWithGA implements LearningAgent {
             }
 
         }
-
-
     }
 
 
@@ -147,7 +140,7 @@ public class LearningWithGA implements LearningAgent {
 //            agents[i].setFitness(evaluationInfo.distancePassedCells);
             agents[i].setDistance(evaluationInfo.distancePassedCells);
         }
-		/* 降順にソートする */
+        /* 降順にソートする */
         Arrays.sort(agents);
 
 		/* 首席Agentが過去の最高評価値を超えた場合，xmlを生成． */
@@ -192,14 +185,12 @@ public class LearningWithGA implements LearningAgent {
         }
 
 		/* ルーレットで選ぶ */
-
         for (int i = 0; i < 2; i++) {    //2回繰り返す
 
 			/* 2から99までの乱数を作成し，99で割る */
             double selectedParent = (2.0 + (int) (r.nextInt(100) * 98.0) / 100.0) / 99.0;    //全てdoubleに直さないとアカン
 
             for (int j = bestnum + 1; j < popsize; j++) {
-
                 if (selectedParent < accumulateRoulette[2]) {
                     parentsGene[i] = 2;
                     break;
@@ -225,35 +216,25 @@ public class LearningWithGA implements LearningAgent {
     }
 
     /* 交叉 */
-    private void cross(OwnGGAgent[] nextagents, int[] parentsGene, int i) {
+    private void cross(OwnGAAgent[] nextagents, int[] parentsGene, int i) {
 
         int geneLength = (1 << agent.inputNum);
-//        int geneLength = 4096 * 200;
 
         int sum = parentsGene[0] + parentsGene[1];
         float roulette = 1 - (float) parentsGene[0] / (float) sum;
-//		System.out.println("parentsGene[0] : "+parentsGene[0]);
-//		System.out.println("parentsGene[1] : "+parentsGene[1]);
-//		System.out.println("roulette : "+roulette);
-//		int Acount=0,Bcount=0;
         for (int k = 0; k < 2; k++) {    //2回繰り返す
             for (int j = 0; j < geneLength; j++) {
 
                 float ran = (float) r.nextInt(sum) / (float) sum;    //ルーレット作成
                 if (ran < roulette) {    //親A
-//					Acount++;
                     byte parentsGeneA = agents[parentsGene[0]].getGene(j);
                     nextagents[i + k].setGene(j, parentsGeneA);
                 } else if (ran > roulette) {    //親B
-//					Bcount++;
                     byte parentsGeneB = agents[parentsGene[1]].getGene(j);
                     nextagents[i + k].setGene(j, parentsGeneB);
-                } else {    //エラー処理?
-
                 }
             }
         }
-//		System.out.println("Aselect : " + (float)(Acount)/(Acount+Bcount)*100 +"\n"+"Bselect:"+(float)(Bcount)/(Acount+Bcount)*100);
     }
 
 
@@ -264,7 +245,6 @@ public class LearningWithGA implements LearningAgent {
 
 		/* ステージ生成 */
         marioAIOptions.setArgs(this.args);
-
 
 	    /* プレイ画面出力するか否か */
         marioAIOptions.setVisualization(true);
@@ -284,11 +264,8 @@ public class LearningWithGA implements LearningAgent {
     private void mutate() {
 
         int popsize2 = popsize - bestnum;
-//		float mutation = popsize * mutateRate;	//突然変異させる個体数(float型)を設定(現在10個体)
         int mutationInt = (int) Math.floor(popsize * mutateRate);    //突然変異させる個体数(int型)
-//		float mutation3 = (1 << 16) * mutateRate;	//突然変異させる遺伝子座の個数(float型)
         int mutateGeneInt = (int) Math.floor((1 << agent.inputNum) * mutateRate);    //突然変異させる遺伝子座の個数(int型)(65536)
-//        int mutateGeneInt = (int) Math.floor(4096 * 200 * mutateRate);    //突然変異させる遺伝子座の個数(int型)(65536)
 
         int[] ran = new int[mutationInt];        //乱数格納用配列
         int geneRan;
@@ -304,7 +281,6 @@ public class LearningWithGA implements LearningAgent {
                 if (i == ran[j]) {    //突然変異させる個体を発見したら
                     for (int k = 0; k < mutateGeneInt; k++) {    //全体の10%を突然変異させる
                         geneRan = r.nextInt(1 << agent.inputNum);
-//                        geneRan = r.nextInt(4096 * 200);
                         agents[i].setGene(geneRan, (byte) r.nextInt(num));
                     }
                 }
@@ -321,8 +297,11 @@ public class LearningWithGA implements LearningAgent {
 
     /* 評価用関数 */
     private int evalFitness(EvaluationInfo evaluationInfo) {
-        return evaluationInfo.distancePassedPhys
-                + evaluationInfo.timeLeft;
+        return evaluationInfo.distancePassedPhys * 3
+                + evaluationInfo.marioStatus * 2000
+                + evaluationInfo.killsTotal * 200
+                + evaluationInfo.coinsGained * 200
+                + evaluationInfo.marioMode * 1000;
     }
 
     @Override

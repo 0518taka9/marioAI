@@ -1,5 +1,5 @@
 [~ Mario AI ~] :LearningWithGA-2017-10-14_23-41-19.xml is not a class name; trying to load a wox definition with that name.
-[~ Mario AI ~] : agent = ch.idsia.agents.OwnGGAgent@462ba11b
+[~ Mario AI ~] : agent = ch.idsia.agents.OwnGAAgent@462ba11b
 [~ Mario AI Benchmark ~ 0.1.9]
 
 [MarioAI] ~ Evaluation Results for Task: BasicTask

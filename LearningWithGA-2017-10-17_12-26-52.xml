@@ -1,4 +1,4 @@
-<object type="ch.idsia.agents.OwnGGAgent" id="0"><field name="name" declaredClass="ch.idsia.agents.OwnGGAgent"><object type="java.lang.String" id="1">GAAgent</object></field><field name="gene"><array type="byte" length="88533" id="2">ChIIEBASCBgaEhgAAhIYABICEAgYGgIYABgSGAAAGBISABgACAoaEhgQCAASEBgSCgoIABIKEgIC
+<object type="ch.idsia.agents.OwnGAAgent" id="0"><field name="name" declaredClass="ch.idsia.agents.OwnGAAgent"><object type="java.lang.String" id="1">GAAgent</object></field><field name="gene"><array type="byte" length="88533" id="2">ChIIEBASCBgaEhgAAhIYABICEAgYGgIYABgSGAAAGBISABgACAoaEhgQCAASEBgSCgoIABIKEgIC
 GhIAEBAYAhgYEgoYAgIKAhoACBIAEgoSCgIYGhAIABACAAIYAAIIChIQAhgICBgKEhIIGggIGBgY
 CBAQCBoaEAIKGBgIChgSGAAYAgIYABIYEhACABISABoKEAAICgISABAaGAAaChgaAhIaAgoCAAga
 CBIaGAICEAoaGgAIABIACBgQAgoYGhoQGBoaCggaEgASCgIIABAYABAYEBISABAKABAQGBIaABAK
