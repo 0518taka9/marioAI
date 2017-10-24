@@ -3,12 +3,8 @@ package ch.idsia.agents.controllers;
 import ch.idsia.agents.Agent;
 import ch.idsia.benchmark.mario.engine.GeneralizerLevelScene;
 import ch.idsia.benchmark.mario.engine.sprites.Mario;
-import ch.idsia.benchmark.mario.engine.sprites.Sprite;
 import ch.idsia.benchmark.mario.environments.Environment;
 
-/**
- * Created by nakatsukatakahiro on 2017/10/06.
- */
 public class OwnAgentTask3 extends BasicMarioAIAgent implements Agent {
 
     private int jumpCount = 0;

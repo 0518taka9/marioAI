@@ -33,8 +33,6 @@ import ch.idsia.benchmark.mario.engine.sprites.Mario;
 import ch.idsia.benchmark.mario.engine.sprites.Sprite;
 import ch.idsia.benchmark.mario.environments.Environment;
 
-import java.util.Random;
-
 /**
  * Created by IntelliJ IDEA.
  * User: Sergey Karakovskiy, sergey.karakovskiy@gmail.com
@@ -42,11 +40,9 @@ import java.util.Random;
  * Time: 4:03:46 AM
  */
 
-public class OwnAgent2 extends BasicMarioAIAgent implements Agent {
-    int trueJumpCounter = 0;
-    int trueSpeedCounter = 0;
+public class OwnAgentTask3Fireball extends BasicMarioAIAgent implements Agent {
 
-    public OwnAgent2() {
+    public OwnAgentTask3Fireball() {
         super("OwnAgent");
         reset();
     }
@@ -59,8 +55,10 @@ public class OwnAgent2 extends BasicMarioAIAgent implements Agent {
 
     public boolean[] getAction() {
 
+        // 常にファイアボールを発射
         action[Mario.KEY_SPEED] = isMarioAbleToShoot;
 
+        // 敵がいるまたは穴がある場合ジャンプして避ける
         if (isObstacle(marioEgoRow, marioEgoCol + 1)
                 || isEnemies(marioEgoRow, marioEgoCol)
                 || isHole(marioEgoRow, marioEgoCol)
@@ -81,11 +79,13 @@ public class OwnAgent2 extends BasicMarioAIAgent implements Agent {
     }
 
     private boolean isEnemies(int r, int c) {
+        // 敵がいればtrueを返す
         return getEnemiesCellValue(r, c + 2) != Sprite.KIND_NONE
                 || getEnemiesCellValue(r, c + 1) != Sprite.KIND_NONE;
     }
 
     private boolean isHole(int r, int c) {
+        // 穴があればtrueを返す
         return getReceptiveFieldCellValue(r + 1, c + 1) == 0
                 && getReceptiveFieldCellValue(r + 2, c + 1) == 0
                 && getReceptiveFieldCellValue(r + 1, c + 2) == 0

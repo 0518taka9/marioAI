@@ -134,9 +134,9 @@ public class LearningWithGA implements LearningAgent {
 
 			/* 評価値(距離)をセット */
             EvaluationInfo evaluationInfo = basicTask.getEvaluationInfo();
-            agents[i].setFitness(evaluationInfo.computeWeightedFitness());
+//            agents[i].setFitness(evaluationInfo.computeWeightedFitness());
 //            agents[i].setFitness(evalFitness(evaluationInfo));
-//            agents[i].setFitness(evaluationInfo.computeBasicFitness());
+            agents[i].setFitness(evaluationInfo.computeBasicFitness());
 //            agents[i].setFitness(evaluationInfo.distancePassedCells);
             agents[i].setDistance(evaluationInfo.distancePassedCells);
         }

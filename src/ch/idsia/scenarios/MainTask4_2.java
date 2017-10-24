@@ -46,6 +46,7 @@ public static void main(String[] args)
 //    AgentsPool.addAgent(AgentsPool.loadAgent("LearningWithGA-2017-10-20_23-25-19.xml", false));   //6466
 //    AgentsPool.addAgent(AgentsPool.loadAgent("LearningWithGA-2017-10-20_23-42-12.xml", false));   //6658
 //    AgentsPool.addAgent(AgentsPool.loadAgent("LearningWithGA-2017-10-21_00-22-00.xml", false));   //6482
+    AgentsPool.addAgent(AgentsPool.loadAgent("LearningWithGA-2017-10-21_20-45-45.xml", false));   //6390
     Agent agent = AgentsPool.getCurrentAgent();
     marioAIOptions.setAgent(agent);
 
