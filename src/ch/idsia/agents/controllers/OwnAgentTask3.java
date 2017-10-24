@@ -32,7 +32,7 @@ public class OwnAgentTask3 extends BasicMarioAIAgent implements Agent {
 
 
         // 目の前に敵がいる場合ジャンプで回避(右)
-        if (action[Mario.KEY_RIGHT]  && isEnemy(r, c + 1) || isEnemy(r, c + 2)) {
+        if (action[Mario.KEY_RIGHT] && isEnemy(r, c + 1) || isEnemy(r, c + 2)) {
             action[Mario.KEY_JUMP] = isMarioAbleToJump;
             return action;
         }
@@ -48,7 +48,7 @@ public class OwnAgentTask3 extends BasicMarioAIAgent implements Agent {
             return action;
         }
 
-        // 着地点の後ろから敵が来ている場合着地点を左に調整
+        // 着地点の後ろから敵が来ている場合着地点を左に調整して敵を踏む
         if (!isMarioOnGround
                 && isEnemy(r + 2, c - 1) && !isObstacle(r + 2, c - 1)) {
             action[Mario.KEY_RIGHT] = false;
@@ -65,7 +65,7 @@ public class OwnAgentTask3 extends BasicMarioAIAgent implements Agent {
             jumpCount = 0;
         }
 
-        // 着地先に地面がない場合着地点を左に調整
+        // 微調整
         if (!isMarioOnGround && isObstacle(r + 2, c + 2) && isNothing(r + 2, c + 3)
                 && isNothing(r, c + 1) && isNothing(r + 1, c + 1)) {
             action[Mario.KEY_RIGHT] = false;
@@ -73,7 +73,7 @@ public class OwnAgentTask3 extends BasicMarioAIAgent implements Agent {
             return action;
         }
 
-        // 着地先に敵がいる場合着地点を左に調整
+        // 着地先に敵がいる場合着地点を左に調整して敵を避ける
         if (!isMarioOnGround && (isEnemy(r + 1, c + 4)
                 || (isEnemy(r + 1, c + 3) && isNothing(r + 2, c))
                 || (isEnemy(r, c + 4) && isNothing(r + 2, c))
@@ -125,16 +125,7 @@ public class OwnAgentTask3 extends BasicMarioAIAgent implements Agent {
         if (isObstacle(r, c + 1) || isObstacle(r, c + 2))
             action[Mario.KEY_JUMP] = isMarioAbleToJump || !isMarioOnGround;
 
-        // 目の前に穴があればジャンプ
-        if (isHole(r, c + 1))
-            action[Mario.KEY_JUMP] = isMarioAbleToJump || !isMarioOnGround;
-
         return action;
-    }
-
-    private boolean isEnemy(int r, int c) {
-        // (r, c)に敵がいたらtrue
-        return getEnemiesCellValue(r, c) != 0;
     }
 
     private boolean isObstacle(int r, int c) {
@@ -144,14 +135,9 @@ public class OwnAgentTask3 extends BasicMarioAIAgent implements Agent {
                 || getReceptiveFieldCellValue(r, c) == GeneralizerLevelScene.FLOWER_POT_OR_CANNON;
     }
 
-    private boolean isHole(int r, int c) {
-        // (r, c)に穴があればtrueを返す
-        int i = 1;
-        while (i <= 9) {
-            if (getReceptiveFieldCellValue(r + i, c) != 0) return false;
-            i++;
-        }
-        return true;
+    private boolean isEnemy(int r, int c) {
+        // (r, c)に敵がいたらtrue
+        return getEnemiesCellValue(r, c) != 0;
     }
 
     private boolean isNothing(int r, int c) {
