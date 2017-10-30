@@ -28,6 +28,8 @@
 package ch.idsia.scenarios;
 
 import ch.idsia.agents.AgentsPool;
+import ch.idsia.agents.LearningAgent;
+import ch.idsia.agents.LearningWithAStar;
 import ch.idsia.benchmark.tasks.BasicTask;
 import ch.idsia.tools.MarioAIOptions;
 import ch.idsia.agents.Agent;
@@ -37,25 +39,30 @@ import ch.idsia.agents.controllers.IgnoreObstacleAgent;
  * Created by IntelliJ IDEA. User: Sergey Karakovskiy, sergey at idsia dot ch Date: Mar 17, 2010 Time: 8:28:00 AM
  * Package: ch.idsia.scenarios
  */
-public final class MainTask4_2
-{
-public static void main(String[] args)
-{
-    final MarioAIOptions marioAIOptions = new MarioAIOptions(args);
+public final class MainTask4_2 {
+    public static void main(String[] args) {
+        final MarioAIOptions marioAIOptions = new MarioAIOptions(args);
 
 //    AgentsPool.addAgent(AgentsPool.loadAgent("LearningWithGA-2017-10-20_23-25-19.xml", false));   //6466
 //    AgentsPool.addAgent(AgentsPool.loadAgent("LearningWithGA-2017-10-20_23-42-12.xml", false));   //6658
 //    AgentsPool.addAgent(AgentsPool.loadAgent("LearningWithGA-2017-10-21_00-22-00.xml", false));   //6482
-    AgentsPool.addAgent(AgentsPool.loadAgent("LearningWithGA-2017-10-21_20-45-45.xml", false));   //6390
-    Agent agent = AgentsPool.getCurrentAgent();
-    marioAIOptions.setAgent(agent);
+//        AgentsPool.addAgent(AgentsPool.loadAgent("LearningWithGA-2017-10-21_20-45-45.xml", false));   //6390
+//        AgentsPool.addAgent(AgentsPool.loadAgent("AStar-task4-2-clear-mini-2.xml", false));   //6430
+//        AgentsPool.addAgent(AgentsPool.loadAgent("AStar-task4-2-clear-mini-3.xml", false));   //6272
+        AgentsPool.addAgent(AgentsPool.loadAgent("AStar-task4-2-clear-mini-4.xml", false));   //6444
+        Agent agent = AgentsPool.getCurrentAgent();
+        marioAIOptions.setAgent(agent);
 
-    marioAIOptions.setArgs("-lco off -lb on -le off -lhb off -lg on -ltb on -lhs off -lca on -lde on -ld 5 -ls 133829");
-    
-    final BasicTask basicTask = new BasicTask(marioAIOptions);
-    basicTask.setOptionsAndReset(marioAIOptions);
-    basicTask.doEpisodes(1,true,1);
-    System.exit(0);
-}
+        marioAIOptions.setArgs("-lco off -lb on -le off -lhb off -lg on -ltb on -lhs off -lca on -lde on -ld 5 -ls 133829");
+
+        final BasicTask basicTask = new BasicTask(marioAIOptions);
+        basicTask.setOptionsAndReset(marioAIOptions);
+        basicTask.doEpisodes(1, true, 1);
+//
+//        LearningAgent learningAgent = new LearningWithAStar("-lco off -lb on -le off -lhb off -lg on -ltb on -lhs off -lca on -lde on -ld 5 -ls 133829");
+//        learningAgent.learn();
+
+        System.exit(0);
+    }
 
 }

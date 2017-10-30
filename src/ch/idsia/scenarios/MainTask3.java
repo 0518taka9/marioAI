@@ -27,6 +27,9 @@
 
 package ch.idsia.scenarios;
 
+import ch.idsia.agents.AgentsPool;
+import ch.idsia.agents.LearningAgent;
+import ch.idsia.agents.LearningWithAStar;
 import ch.idsia.agents.controllers.OwnAgentTask3;
 import ch.idsia.agents.controllers.OwnAgentTask3Fireball;
 import ch.idsia.benchmark.tasks.BasicTask;
@@ -41,8 +44,10 @@ public final class MainTask3 {
     public static void main(String[] args) {
         final MarioAIOptions marioAIOptions = new MarioAIOptions(args);
 
-        final Agent agent = new OwnAgentTask3();
+//        final Agent agent = new OwnAgentTask3();
 //        final Agent agent = new OwnAgentTask3Fireball();
+        AgentsPool.addAgent(AgentsPool.loadAgent("AStar-task3.xml", false));
+        Agent agent = AgentsPool.getCurrentAgent();
 
         marioAIOptions.setAgent(agent);
         marioAIOptions.setArgs("-lhs off -ltb on -lg off -lb off -ld 1 -ls 0 -le g");
@@ -50,6 +55,9 @@ public final class MainTask3 {
         final BasicTask basicTask = new BasicTask(marioAIOptions);
         basicTask.setOptionsAndReset(marioAIOptions);
         basicTask.doEpisodes(1, true, 1);
+//        LearningAgent learningAgent = new LearningWithAStar("-lhs off -ltb on -lg off -lb off -ld 1 -ls 0 -le g");
+//        learningAgent.learn();
+
         System.exit(0);
     }
 
