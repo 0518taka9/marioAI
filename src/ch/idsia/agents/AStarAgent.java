@@ -3,7 +3,6 @@ package ch.idsia.agents;
 import ch.idsia.agents.controllers.BasicMarioAIAgent;
 import ch.idsia.benchmark.mario.engine.sprites.Mario;
 import ch.idsia.benchmark.mario.environments.Environment;
-
 import java.util.Random;
 
 /**
@@ -11,12 +10,9 @@ import java.util.Random;
  */
 public class AStarAgent extends BasicMarioAIAgent implements Agent, Cloneable {
 
-    // 学習回数
-    private final int epoch = 10000;
-
     static String name = "AStarAgent";
 
-    // マリオのactionを格納するリスト
+    // マリオのactionを格納する配列
     public byte[] actions;
 
     // actionsのインデックス
@@ -86,7 +82,7 @@ public class AStarAgent extends BasicMarioAIAgent implements Agent, Cloneable {
 
     /*
      * actionをランダムに決める
-     * 0〜32の整数値
+     * 0〜31の整数値
      * action[0] = left 1
      * action[1] = right 2
      * action[2] = down 4

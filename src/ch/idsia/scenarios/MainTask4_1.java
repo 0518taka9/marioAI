@@ -28,8 +28,6 @@
 package ch.idsia.scenarios;
 
 import ch.idsia.agents.*;
-import ch.idsia.agents.controllers.OwnAgent3;
-import ch.idsia.agents.controllers.OwnAgentTask3;
 import ch.idsia.benchmark.tasks.BasicTask;
 import ch.idsia.tools.MarioAIOptions;
 
@@ -41,11 +39,6 @@ public final class MainTask4_1 {
     public static void main(String[] args) {
         final MarioAIOptions marioAIOptions = new MarioAIOptions(args);
 
-//    final Agent agent = new OwnAgent3();
-//    final Agent agent = new OwnAgentTask3();
-
-//    AgentsPool.addAgent(AgentsPool.loadAgent("LearningWithGA-2017-10-14_23-20-57.xml", false));
-//    AgentsPool.addAgent(AgentsPool.loadAgent("LearningWithGA-2017-10-14_23-29-58.xml", false));
 //    AgentsPool.addAgent(AgentsPool.loadAgent("LearningWithGA-2017-10-14_23-53-10.xml", false));   //10038
 //    AgentsPool.addAgent(AgentsPool.loadAgent("LearningWithGA-2017-10-14_23-41-19.xml", false)); //10074
 //    AgentsPool.addAgent(AgentsPool.loadAgent("LearningWithGA-2017-10-17_13-08-23.xml", false)); //9956
@@ -53,11 +46,11 @@ public final class MainTask4_1 {
 //    AgentsPool.addAgent(AgentsPool.loadAgent("AStar-task4-1-clear-fire-2.xml", false)); //10314
     AgentsPool.addAgent(AgentsPool.loadAgent("AStar-task4-1-clear-fire.xml", false)); //10352
     Agent agent = AgentsPool.getCurrentAgent();
-//
+
     marioAIOptions.setAgent(agent);
-//
+
     marioAIOptions.setArgs("-lde on -ltb off -ld 2 -ls 0 -le g");
-//
+
     final BasicTask basicTask = new BasicTask(marioAIOptions);
     basicTask.setOptionsAndReset(marioAIOptions);
     basicTask.doEpisodes(1,true,1);

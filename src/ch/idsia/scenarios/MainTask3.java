@@ -45,9 +45,10 @@ public final class MainTask3 {
         final MarioAIOptions marioAIOptions = new MarioAIOptions(args);
 
 //        final Agent agent = new OwnAgentTask3();
-//        final Agent agent = new OwnAgentTask3Fireball();
-        AgentsPool.addAgent(AgentsPool.loadAgent("AStar-task3.xml", false));
-        Agent agent = AgentsPool.getCurrentAgent();
+        final Agent agent = new OwnAgentTask3Fireball();
+//        AgentsPool.addAgent(AgentsPool.loadAgent("AStar-task3.xml", false));    //9436
+//        AgentsPool.addAgent(AgentsPool.loadAgent("AStar-task3-clear-fire.xml", false)); //9902
+//        Agent agent = AgentsPool.getCurrentAgent();
 
         marioAIOptions.setAgent(agent);
         marioAIOptions.setArgs("-lhs off -ltb on -lg off -lb off -ld 1 -ls 0 -le g");
@@ -57,7 +58,7 @@ public final class MainTask3 {
         basicTask.doEpisodes(1, true, 1);
 //        LearningAgent learningAgent = new LearningWithAStar("-lhs off -ltb on -lg off -lb off -ld 1 -ls 0 -le g");
 //        learningAgent.learn();
-
+//
         System.exit(0);
     }
 

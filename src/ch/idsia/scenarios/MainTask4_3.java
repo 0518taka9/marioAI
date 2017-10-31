@@ -43,14 +43,14 @@ public final class MainTask4_3 {
 //        AgentsPool.addAgent(AgentsPool.loadAgent("AStar-task4-3-clear-fire.xml", false));  //9656
         AgentsPool.addAgent(AgentsPool.loadAgent("AStar-task4-3-clear-fire-2.xml", false)); //10276
         Agent agent = AgentsPool.getCurrentAgent();
-//
+
         marioAIOptions.setAgent(agent);
 
         marioAIOptions.setArgs("-lde on -i off -ld 30 -ls 133434 -lhb on");
 
 //        LearningAgent learningAgent = new LearningWithAStar("-lde on -i off -ld 30 -ls 133434 -lhb on");
 //        learningAgent.learn();
-//
+
         final BasicTask basicTask = new BasicTask(marioAIOptions);
         basicTask.setOptionsAndReset(marioAIOptions);
         basicTask.doEpisodes(1, true, 1);

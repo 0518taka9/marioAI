@@ -38,10 +38,7 @@ public class LearningWithAStar implements LearningAgent {
 
     /* LearningWithAStarのコンストラクタ */
     public LearningWithAStar(String args) {
-//        agent = new AStarAgent();
-        agent = (AStarAgent) Easy.load("AStar-task4-3-195-fire.xml");
-//        agent = (AStarAgent) Easy.load("AStar-task4-3-150-Fire.xml");
-//        agent = (AStarAgent) Easy.load("AStar-task4-3-clear-mini.xml");
+        agent = new AStarAgent();
         bestAgent = agent.clone();
         this.args = args;
     }
@@ -50,8 +47,6 @@ public class LearningWithAStar implements LearningAgent {
 
         MarioAIOptions marioAIOptions = new MarioAIOptions();
         BasicTask basicTask = new BasicTask(marioAIOptions);
-
-		/* ステージ生成 */
         marioAIOptions.setArgs(args);
 
 	    /* プレイ画面出力するか否か */
@@ -92,7 +87,7 @@ public class LearningWithAStar implements LearningAgent {
             damagedIndex = agent.getDamagedIndex();
             actionIndex = agent.getActionIndex();
 
-            // 無傷でクリアしたらループを抜ける
+            // クリアしたらループを抜ける
             if (evaluationInfo.distancePassedCells >= 256 && evaluationInfo.marioMode == 2) {
                 setNextAgent(agent, nextAgent, 1);
                 agent = nextAgent.clone();
@@ -120,6 +115,7 @@ public class LearningWithAStar implements LearningAgent {
         // xmlで出力
         writeFile();
 
+        // 確認のためbestAgentを実行
         marioAIOptions.setAgent(bestAgent);
         marioAIOptions.setVisualization(true);
         basicTask.setOptionsAndReset(marioAIOptions);
@@ -136,7 +132,11 @@ public class LearningWithAStar implements LearningAgent {
      * deathPoint：死んだ地点
      */
     private void setNextAgent(AStarAgent agent, AStarAgent nextAgent, int n) {
+
+        // agentのactionsを取得
         byte[] actions = agent.getActions();
+
+        // 巻き戻すインデックス
         int rewindIndex = deathPoints.get(deathPoint) / 300 * 20;
 
         // クリアした時
@@ -169,6 +169,7 @@ public class LearningWithAStar implements LearningAgent {
         for (int i = actionIndex - 10; i < actions.length; i++) {
             actions[i] = 0;
         }
+        // actionsをコピー
         nextAgent.setActions(actions);
     }
 
