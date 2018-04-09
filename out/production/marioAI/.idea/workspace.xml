@@ -1,0 +1,1512 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="7b349e83-5731-4141-b751-308fed71bf44" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/ch/idsia/scenarios/DifficultStage.java" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/org_testng_testng_6_10.xml" afterPath="$PROJECT_DIR$/.idea/libraries/org_testng_testng_6_10.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/AStar-task3-clear-fire.xml" afterPath="$PROJECT_DIR$/AStar-task3-clear-fire.xml" />
+      <change beforePath="$PROJECT_DIR$/marioAI.iml" afterPath="$PROJECT_DIR$/marioAI.iml" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/agents/AStarAgent.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/agents/Agent.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/agents/AgentLoader.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/agents/AgentsPool.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/agents/AmiCoAgent.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/agents/BasicLearningAgent.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/agents/GAAgent.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/agents/KeyOfMC.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/agents/LearningAgent.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/agents/LearningWithAStar.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/agents/LearningWithGA.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/agents/LearningWithMC.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/agents/MCAgent.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/agents/MLPESLearningAgent.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/agents/OwnGAAgent.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/agents/SRNESLearningAgent.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/agents/SimpleAgent.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/agents/controllers/BasicMarioAIAgent.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/agents/controllers/ForwardAgent.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/agents/controllers/ForwardJumpingAgent.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/agents/controllers/IgnoreObstacleAgent.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/agents/controllers/OwnAgent.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/agents/controllers/OwnAgent3.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/agents/controllers/OwnAgentTask2.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/agents/controllers/OwnAgentTask3.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/agents/controllers/OwnAgentTask3Fireball.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/agents/controllers/RandomAgent.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/agents/controllers/ReplayAgent.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/agents/controllers/ScaredAgent.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/agents/controllers/ScaredShooty.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/agents/controllers/TimingAgent.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/agents/controllers/human/CheaterKeyboardAgent.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/agents/controllers/human/HumanKeyboardAgent.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/agents/learning/LargeMLPAgent.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/agents/learning/LargeSRNAgent.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/agents/learning/MediumMLPAgent.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/agents/learning/MediumSRNAgent.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/agents/learning/SRNAgent.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/agents/learning/SimpleMLPAgent.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/agents/learning/SmallMLPAgent.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/agents/learning/SmallSRNAgent.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/benchmark/experiments/EpisodicExperiment.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/benchmark/experiments/Experiment.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/benchmark/mario/engine/Art.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/benchmark/mario/engine/BgRenderer.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/benchmark/mario/engine/GeneralizerEnemies.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/benchmark/mario/engine/GeneralizerLevelScene.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/benchmark/mario/engine/GlobalOptions.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/benchmark/mario/engine/LevelRenderer.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/benchmark/mario/engine/LevelScene.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/benchmark/mario/engine/MarioVisualComponent.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/benchmark/mario/engine/Recorder.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/benchmark/mario/engine/Replayer.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/benchmark/mario/engine/level/BgLevelGenerator.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/benchmark/mario/engine/level/ImprovedNoise.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/benchmark/mario/engine/level/Level$objCounters.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/benchmark/mario/engine/level/Level.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/benchmark/mario/engine/level/LevelGenerator.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/benchmark/mario/engine/level/SpriteTemplate.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/benchmark/mario/engine/mapedit/LevelEditView.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/benchmark/mario/engine/mapedit/LevelEditor$1.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/benchmark/mario/engine/mapedit/LevelEditor.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/benchmark/mario/engine/mapedit/TilePicker.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/benchmark/mario/engine/sprites/BulletBill.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/benchmark/mario/engine/sprites/CoinAnim.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/benchmark/mario/engine/sprites/Enemy.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/benchmark/mario/engine/sprites/FireFlower.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/benchmark/mario/engine/sprites/Fireball.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/benchmark/mario/engine/sprites/FlowerEnemy.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/benchmark/mario/engine/sprites/GreenMushroom.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/benchmark/mario/engine/sprites/Mario.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/benchmark/mario/engine/sprites/Mushroom.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/benchmark/mario/engine/sprites/Particle.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/benchmark/mario/engine/sprites/Princess.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/benchmark/mario/engine/sprites/Shell.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/benchmark/mario/engine/sprites/Sparkle.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/benchmark/mario/engine/sprites/Sprite.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/benchmark/mario/engine/sprites/SpriteContext.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/benchmark/mario/engine/sprites/WaveGoomba.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/benchmark/mario/environments/Environment.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/benchmark/mario/environments/MarioEnvironment.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/benchmark/mario/simulation/AmiCoSimulator.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/benchmark/mario/simulation/SimulationOptions.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/benchmark/tasks/BasicTask.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/benchmark/tasks/GamePlayTask.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/benchmark/tasks/LearningTask.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/benchmark/tasks/MarioCustomSystemOfValues.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/benchmark/tasks/MarioSystemOfValues$timeLengthMapping.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/benchmark/tasks/MarioSystemOfValues.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/benchmark/tasks/MultiDifficultyProgressTask.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/benchmark/tasks/MultiSeedProgressTask.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/benchmark/tasks/MushroomTask.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/benchmark/tasks/ProgressTask.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/benchmark/tasks/ReplayTask.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/benchmark/tasks/SystemOfValues.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/benchmark/tasks/Task.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/evolution/EA.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/evolution/Evolvable.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/evolution/FA.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/evolution/MLP.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/evolution/SRN.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/evolution/ea/ES.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/scenarios/Custom.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/scenarios/Main.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/scenarios/Main3.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/scenarios/MainOwn.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/scenarios/MainTask2.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/scenarios/MainTask3.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/scenarios/MainTask4_1.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/scenarios/MainTask4_2.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/scenarios/MainTask4_3.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/scenarios/Play.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/scenarios/Replay.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/scenarios/champ/GamePlayTrack.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/scenarios/champ/LearningTrack.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/scenarios/champ/LearningTrackMC.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/scenarios/champ/TuringTestTrack.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/scenarios/oldscenarios/CompetitionScore.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/scenarios/oldscenarios/Evolve.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/scenarios/oldscenarios/EvolveIncrementally.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/scenarios/oldscenarios/EvolveMultiSeed.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/scenarios/oldscenarios/GeneralScenario.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/scenarios/oldscenarios/MainRun.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/scenarios/oldscenarios/Stats.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/scenarios/test/EvaluateJLink.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/scenarios/test/EvolveSingle.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/scenarios/test/EvolveWithChangingSeeds.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/scenarios/test/PaperEvolve.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/scenarios/test/PaperEvolveBatch.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/scenarios/test/PlayJLink.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/scenarios/test/StatsJLink.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/scenarios/test/StochasticityTest.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/tools/EvaluationInfo.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/tools/EvaluationInfoStatisticalSummary.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/tools/Evaluator.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/tools/GameViewer$1.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/tools/GameViewer$GameViewerActions.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/tools/GameViewer$GameViewerView.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/tools/GameViewer.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/tools/MarioAIOptions.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/tools/RandomCreatureGenerator.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/tools/ReplayerOptions$Interval.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/tools/ReplayerOptions.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/tools/Scale2x.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/tools/StateEncoderDecoder.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/tools/ToolsConfigurator$INTERFACE_TYPE.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/tools/ToolsConfigurator$ToolsConfiguratorActions.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/tools/ToolsConfigurator.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/tools/amico/AmiCoJavaPy.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/tools/punj/PunctualJudge.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/unittests/CmdLineOptionsTest.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/unittests/LevelGeneratorTest.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/unittests/LevelSceneTest.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/unittests/MarioAIBenchmarkTest.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/unittests/MarioEnvironmentTest.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/utils/ErrorCodes.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/utils/MathX.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/utils/ParameterContainer.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/utils/statistics/StatisticalSummary$Watch.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/utils/statistics/StatisticalSummary.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/utils/statistics/StatisticalTests.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/utils/statistics/Stats.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/utils/wox/serial/AccessTest$Sub.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/utils/wox/serial/AccessTest$Super.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/utils/wox/serial/AccessTest.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/utils/wox/serial/ArrayListTest.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/utils/wox/serial/Easy.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/utils/wox/serial/EasyTest.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/utils/wox/serial/EncodeBase64.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/utils/wox/serial/ObjectReader.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/utils/wox/serial/ObjectWriter.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/utils/wox/serial/ReadTest.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/utils/wox/serial/Serial.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/utils/wox/serial/ShadowTest$X.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/utils/wox/serial/ShadowTest$Y.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/utils/wox/serial/ShadowTest.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/utils/wox/serial/SimpleReader.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/utils/wox/serial/SimpleWriter.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/utils/wox/serial/TestObject$Inner.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/utils/wox/serial/TestObject.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/utils/wox/serial/Util.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/utils/wox/serial/WriterTest.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/ch/idsia/agents/AStarAgent.java" afterPath="$PROJECT_DIR$/src/ch/idsia/agents/AStarAgent.java" />
+      <change beforePath="$PROJECT_DIR$/src/ch/idsia/agents/LearningWithAStar.java" afterPath="$PROJECT_DIR$/src/ch/idsia/agents/LearningWithAStar.java" />
+      <change beforePath="$PROJECT_DIR$/src/ch/idsia/scenarios/MainTask2.java" afterPath="$PROJECT_DIR$/src/ch/idsia/scenarios/MainTask2.java" />
+      <change beforePath="$PROJECT_DIR$/src/ch/idsia/scenarios/MainTask3.java" afterPath="$PROJECT_DIR$/src/ch/idsia/scenarios/MainTask3.java" />
+      <change beforePath="$PROJECT_DIR$/src/ch/idsia/scenarios/MainTask4_2.java" afterPath="$PROJECT_DIR$/src/ch/idsia/scenarios/MainTask4_2.java" />
+      <change beforePath="$PROJECT_DIR$/src/ch/idsia/scenarios/MainTask4_3.java" afterPath="$PROJECT_DIR$/src/ch/idsia/scenarios/MainTask4_3.java" />
+      <change beforePath="$PROJECT_DIR$/src/ch/idsia/utils/wox/serial/EncodeBase64.java" afterPath="$PROJECT_DIR$/src/ch/idsia/utils/wox/serial/EncodeBase64.java" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="Play.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ch/idsia/scenarios/Play.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="735">
+              <caret line="76" column="0" lean-forward="false" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MainTask4_3.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/ch/idsia/scenarios/MainTask4_3.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="390">
+              <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#2909#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MainTask4_2.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ch/idsia/scenarios/MainTask4_2.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="42" column="44" lean-forward="false" selection-start-line="42" selection-start-column="44" selection-end-line="42" selection-end-column="44" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MainTask4_1.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ch/idsia/scenarios/MainTask4_1.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MainTask3.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ch/idsia/scenarios/MainTask3.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="42" column="30" lean-forward="false" selection-start-line="42" selection-start-column="30" selection-end-line="42" selection-end-column="30" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MainTask2.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ch/idsia/scenarios/MainTask2.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="420">
+              <caret line="61" column="0" lean-forward="false" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DifficultStage.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ch/idsia/scenarios/DifficultStage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="50" column="40" lean-forward="false" selection-start-line="50" selection-start-column="40" selection-end-line="50" selection-end-column="40" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LearningWithAStar.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ch/idsia/agents/LearningWithAStar.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="855">
+              <caret line="65" column="22" lean-forward="false" selection-start-line="65" selection-start-column="22" selection-end-line="65" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>marioState</find>
+      <find>marioState[0]</find>
+      <find>length</find>
+      <find>LearningTask</find>
+      <find>GAAgent</find>
+      <find>evaluationinfo</find>
+      <find>Track</find>
+      <find>xml</find>
+      <find>GGA</find>
+      <find>gaagent</find>
+      <find>clone()</find>
+    </findStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$/src</dir>
+    </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/ch/idsia/agents/controllers/OwnAgent3" />
+        <option value="$PROJECT_DIR$/src/ch/idsia/agents/controllers/OwnAgent3.java" />
+        <option value="$PROJECT_DIR$/src/ch/idsia/agents/controllers/OwnAgent2.java" />
+        <option value="$PROJECT_DIR$/src/ch/idsia/benchmark/tasks/LearningTask.java" />
+        <option value="$PROJECT_DIR$/src/ch/idsia/scenarios/champ/GamePlayTrack.java" />
+        <option value="$PROJECT_DIR$/src/ch/idsia/scenarios/oldscenarios/Stats.java" />
+        <option value="$PROJECT_DIR$/src/ch/idsia/agents/controllers/TimingAgent.java" />
+        <option value="$PROJECT_DIR$/src/ch/idsia/scenarios/oldscenarios/MainRun.java" />
+        <option value="$PROJECT_DIR$/src/ch/idsia/agents/controllers/human/OwnAgent0.java" />
+        <option value="$PROJECT_DIR$/src/ch/idsia/agents/controllers/OwnAgent0.java" />
+        <option value="$PROJECT_DIR$/src/ch/idsia/agents/controllers/BasicMarioAIAgent.java" />
+        <option value="$PROJECT_DIR$/src/ch/idsia/agents/learning/OwnGAAgent.java" />
+        <option value="$PROJECT_DIR$/src/ch/idsia/agents/controllers/OwnAgent.java" />
+        <option value="$PROJECT_DIR$/src/ch/idsia/agents/GGAgent.java" />
+        <option value="$PROJECT_DIR$/src/ch/idsia/agents/GAAgent.java" />
+        <option value="$PROJECT_DIR$/src/ch/idsia/agents/controllers/ForwardJumpingAgent.java" />
+        <option value="$PROJECT_DIR$/Task2actions" />
+        <option value="$PROJECT_DIR$/src/ch/idsia/scenarios/Main.java" />
+        <option value="$PROJECT_DIR$/4_1clear" />
+        <option value="$PROJECT_DIR$/src/ch/idsia/agents/controllers/OwnAgentTask2.java" />
+        <option value="$PROJECT_DIR$/src/ch/idsia/agents/OwnGGAgent.java" />
+        <option value="$PROJECT_DIR$/src/ch/idsia/scenarios/champ/LearningTrack.java" />
+        <option value="$PROJECT_DIR$/src/ch/idsia/agents/controllers/OwnAgentTask2Fireball.java" />
+        <option value="$PROJECT_DIR$/src/ch/idsia/agents/controllers/OwnAgentTask3Fireball.java" />
+        <option value="$PROJECT_DIR$/src/ch/idsia/agents/LearningWithGA.java" />
+        <option value="$PROJECT_DIR$/src/ch/idsia/agents/OwnGAAgent.java" />
+        <option value="$PROJECT_DIR$/LearningWithGA-2017-10-10_15-42-02.xml" />
+        <option value="$PROJECT_DIR$/LearningWithAStar-2017-10-29_23-57-15.xml" />
+        <option value="$PROJECT_DIR$/LearningWithAStar-2017-10-30_00-07-50.xml" />
+        <option value="$PROJECT_DIR$/LearningWithGA-2017-10-10_15-41-59.xml" />
+        <option value="$PROJECT_DIR$/LearningWithAStar-2017-10-30_00-22-53.xml" />
+        <option value="$PROJECT_DIR$/LearningWithAStar-2017-10-30_03-11-39.xml" />
+        <option value="$PROJECT_DIR$/LearningWithAStar-2017-10-30_21-36-18.xml" />
+        <option value="$PROJECT_DIR$/LearningWithAStar-2017-10-30_21-44-46.xml" />
+        <option value="$PROJECT_DIR$/LearningWithAStar-2017-10-30_21-49-23.xml" />
+        <option value="$PROJECT_DIR$/AStar-task4-3-clear-Fire.xml" />
+        <option value="$PROJECT_DIR$/LearningWithAStar-2017-10-30_21-51-10.xml" />
+        <option value="$PROJECT_DIR$/AStar-task3.xml" />
+        <option value="$PROJECT_DIR$/LearningWithAStar-2017-10-30_21-58-38.xml" />
+        <option value="$PROJECT_DIR$/AStar-task4-3-150-Fire.xml" />
+        <option value="$PROJECT_DIR$/src/ch/idsia/scenarios/Play.java" />
+        <option value="$PROJECT_DIR$/src/ch/idsia/agents/controllers/OwnAgentTask3.java" />
+        <option value="$PROJECT_DIR$/src/ch/idsia/scenarios/MainTask4_1.java" />
+        <option value="$PROJECT_DIR$/AStar-task3-clear-fire.xml" />
+        <option value="$PROJECT_DIR$/src/ch/idsia/agents/AStarAgent.java" />
+        <option value="$PROJECT_DIR$/src/ch/idsia/scenarios/MainTask4_3.java" />
+        <option value="$PROJECT_DIR$/src/ch/idsia/agents/LearningWithAStar.java" />
+        <option value="$PROJECT_DIR$/src/ch/idsia/scenarios/DifficultStage.java" />
+        <option value="$PROJECT_DIR$/src/ch/idsia/scenarios/MainTask2.java" />
+        <option value="$PROJECT_DIR$/src/ch/idsia/scenarios/MainTask4_2.java" />
+        <option value="$PROJECT_DIR$/src/ch/idsia/scenarios/MainTask3.java" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="MavenRunner">
+    <option name="jreName" value="#JAVA_INTERNAL" />
+  </component>
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="width" value="1680" />
+    <option name="height" value="1050" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>Class structureJava</id>
+          </State>
+          <State>
+            <id>Code maturity issuesJava</id>
+          </State>
+          <State>
+            <id>Google Web Toolkit issues</id>
+          </State>
+          <State>
+            <id>JUnit issuesJava</id>
+          </State>
+          <State>
+            <id>Java</id>
+          </State>
+          <State>
+            <id>Java 5Java language level migration aidsJava</id>
+          </State>
+          <State>
+            <id>Java 7Java language level migration aidsJava</id>
+          </State>
+          <State>
+            <id>Java 8Java language level migration aidsJava</id>
+          </State>
+          <State>
+            <id>Java language level migration aidsJava</id>
+          </State>
+          <State>
+            <id>Javadoc issuesJava</id>
+          </State>
+          <State>
+            <id>Numeric issuesJava</id>
+          </State>
+          <State>
+            <id>Spring</id>
+          </State>
+          <State>
+            <id>Spring AOPSpring</id>
+          </State>
+          <State>
+            <id>TestNGJava</id>
+          </State>
+          <State>
+            <id>Threading issuesJava</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>Android</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane" />
+      <pane id="AndroidView" />
+      <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="nodejs_interpreter_path" value="node" />
+    <property name="js.eslint.eslintPackage" value="" />
+    <property name="js-jscs-nodeInterpreter" value="/opt/local/bin/node" />
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/ch/idsia/agents/controllers" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.MainTask4_3">
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <module />
+    </configuration>
+    <configuration name="MainTask2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="ch.idsia.scenarios.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="ch.idsia.scenarios.MainTask2" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="marioAI" />
+      <envs />
+    </configuration>
+    <configuration name="MainTask3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="ch.idsia.scenarios.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="ch.idsia.scenarios.MainTask3" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="marioAI" />
+      <envs />
+    </configuration>
+    <configuration name="MainTask4_1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="ch.idsia.scenarios.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="ch.idsia.scenarios.MainTask4_1" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="marioAI" />
+      <envs />
+    </configuration>
+    <configuration name="MainTask4_2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="ch.idsia.scenarios.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="ch.idsia.scenarios.MainTask4_2" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="marioAI" />
+      <envs />
+    </configuration>
+    <configuration name="MainTask4_3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="ch.idsia.scenarios.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="ch.idsia.scenarios.MainTask4_3" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="ALTERNATIVE_JRE_PATH" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="marioAI" />
+      <envs />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+    </configuration>
+    <configuration default="true" type="GrailsRunConfigurationType" factoryName="Grails">
+      <setting name="vmparams" value="" />
+      <setting name="cmdLine" value="run-app" />
+      <setting name="passParentEnv" value="true" />
+      <setting name="launchBrowser" value="true" />
+      <setting name="launchBrowserUrl" value="" />
+      <setting name="depsClasspath" value="false" />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file id="idea.log" enabled="true" />
+    </configuration>
+    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android App">
+      <module name="" />
+      <option name="DEPLOY" value="true" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="DEBUGGER_TYPE" value="Java" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <Java />
+      <Profilers>
+        <option name="ENABLE_ADVANCED_PROFILING" value="true" />
+        <option name="GAPID_ENABLED" value="false" />
+        <option name="GAPID_DISABLE_PCS" value="false" />
+        <option name="SUPPORT_LIB_ENABLED" value="true" />
+        <option name="INSTRUMENTATION_ENABLED" value="true" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
+      <module name="" />
+      <option name="TESTING_TYPE" value="0" />
+      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="EXTRA_OPTIONS" value="" />
+      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="DEBUGGER_TYPE" value="Java" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <Java />
+      <Profilers>
+        <option name="ENABLE_ADVANCED_PROFILING" value="true" />
+        <option name="GAPID_ENABLED" value="false" />
+        <option name="GAPID_DISABLE_PCS" value="false" />
+        <option name="SUPPORT_LIB_ENABLED" value="true" />
+        <option name="INSTRUMENTATION_ENABLED" value="true" />
+      </Profilers>
+      <method />
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Cold Fusion runner description" factoryName="Cold Fusion" custom_browser="" web_path="">
+      <method />
+    </configuration>
+    <configuration default="true" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="myFilePath" />
+      <option name="GLUE" />
+      <option name="myNameFilter" />
+      <option name="myGeneratedName" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="FlashRunConfigurationType" factoryName="Flash App">
+      <option name="BCName" value="" />
+      <option name="IOSSimulatorSdkPath" value="" />
+      <option name="adlOptions" value="" />
+      <option name="airProgramParameters" value="" />
+      <option name="appDescriptorForEmulator" value="Android" />
+      <option name="debugTransport" value="USB" />
+      <option name="debuggerSdkRaw" value="BC SDK" />
+      <option name="emulator" value="NexusOne" />
+      <option name="emulatorAdlOptions" value="" />
+      <option name="fastPackaging" value="true" />
+      <option name="fullScreenHeight" value="0" />
+      <option name="fullScreenWidth" value="0" />
+      <option name="launchUrl" value="false" />
+      <option name="launcherParameters">
+        <LauncherParameters>
+          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
+          <option name="launcherType" value="OSDefault" />
+          <option name="newPlayerInstance" value="false" />
+          <option name="playerPath" value="/Applications/Flash Player Debugger.app" />
+        </LauncherParameters>
+      </option>
+      <option name="mobileRunTarget" value="Emulator" />
+      <option name="moduleName" value="" />
+      <option name="overriddenMainClass" value="" />
+      <option name="overriddenOutputFileName" value="" />
+      <option name="overrideMainClass" value="false" />
+      <option name="runTrusted" value="true" />
+      <option name="screenDpi" value="0" />
+      <option name="screenHeight" value="0" />
+      <option name="screenWidth" value="0" />
+      <option name="url" value="http://" />
+      <option name="usbDebugPort" value="7936" />
+      <method />
+    </configuration>
+    <configuration default="true" type="FlexUnitRunConfigurationType" factoryName="FlexUnit" appDescriptorForEmulator="Android" class_name="" emulatorAdlOptions="" method_name="" package_name="" scope="Class">
+      <option name="BCName" value="" />
+      <option name="launcherParameters">
+        <LauncherParameters>
+          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
+          <option name="launcherType" value="OSDefault" />
+          <option name="newPlayerInstance" value="false" />
+          <option name="playerPath" value="/Applications/Flash Player Debugger.app" />
+        </LauncherParameters>
+      </option>
+      <option name="moduleName" value="" />
+      <option name="trusted" value="true" />
+      <method />
+    </configuration>
+    <configuration default="true" type="GradleRunConfiguration" factoryName="Gradle">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list />
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <method />
+    </configuration>
+    <configuration default="true" type="JarApplication" factoryName="JAR Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="Java Scratch" factoryName="Java Scratch">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="SCRATCH_FILE_ID" value="0" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="marioAI" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="osgi.bnd.run" factoryName="Run Launcher">
+      <method />
+    </configuration>
+    <configuration default="true" type="osgi.bnd.run" factoryName="Test Launcher (JUnit)">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+    </configuration>
+    <list size="5">
+      <item index="0" class="java.lang.String" itemvalue="Application.MainTask2" />
+      <item index="1" class="java.lang.String" itemvalue="Application.MainTask3" />
+      <item index="2" class="java.lang.String" itemvalue="Application.MainTask4_1" />
+      <item index="3" class="java.lang.String" itemvalue="Application.MainTask4_2" />
+      <item index="4" class="java.lang.String" itemvalue="Application.MainTask4_3" />
+    </list>
+    <recent_temporary>
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Application.MainTask4_3" />
+        <item index="1" class="java.lang.String" itemvalue="Application.MainTask4_2" />
+        <item index="2" class="java.lang.String" itemvalue="Application.MainTask4_1" />
+        <item index="3" class="java.lang.String" itemvalue="Application.MainTask3" />
+        <item index="4" class="java.lang.String" itemvalue="Application.MainTask2" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="StructureViewFactory">
+    <option name="ACTIVE_ACTIONS" value=",SHOW_PROPERTIES" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7b349e83-5731-4141-b751-308fed71bf44" name="Default" comment="" />
+      <created>1507005037467</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1507005037467</updated>
+      <workItem from="1507005045629" duration="1364000" />
+      <workItem from="1507007408445" duration="49678000" />
+      <workItem from="1507270024322" duration="27805000" />
+      <workItem from="1507605593303" duration="18723000" />
+      <workItem from="1507685257629" duration="11036000" />
+      <workItem from="1507804084362" duration="24914000" />
+      <workItem from="1508157566215" duration="133000" />
+      <workItem from="1508210476892" duration="8101000" />
+      <workItem from="1508241281474" duration="12685000" />
+      <workItem from="1508390896295" duration="6295000" />
+      <workItem from="1508584891615" duration="1651000" />
+      <workItem from="1508672219723" duration="534000" />
+      <workItem from="1508817851526" duration="8582000" />
+      <workItem from="1509036216738" duration="5809000" />
+      <workItem from="1509096095566" duration="69551000" />
+      <workItem from="1509452931446" duration="549000" />
+      <workItem from="1509509821406" duration="23000" />
+      <workItem from="1509522018239" duration="190000" />
+      <workItem from="1509604579074" duration="196000" />
+      <workItem from="1509852805944" duration="307000" />
+      <workItem from="1510037408560" duration="1533000" />
+      <workItem from="1510040193378" duration="270000" />
+      <workItem from="1510230122466" duration="6147000" />
+      <workItem from="1510560604396" duration="417000" />
+      <workItem from="1510633424704" duration="1214000" />
+      <workItem from="1515671407866" duration="82000" />
+      <workItem from="1523275207673" duration="208000" />
+      <workItem from="1523275443744" duration="790000" />
+      <workItem from="1523276286758" duration="196000" />
+      <workItem from="1523276521168" duration="354000" />
+      <workItem from="1523276901710" duration="293000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="259630000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
+    <layout>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.268" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.58433735" sideWeight="0.5028612" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4871287" sideWeight="0.49713877" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20119047" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24973376" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32736573" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.58433735" sideWeight="0.5028612" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24973376" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26831684" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4871287" sideWeight="0.49713877" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19914803" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32736573" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="19" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/LearningWithAStar-2017-10-29_23-46-57.xml" />
+    <entry file="file://$PROJECT_DIR$/LearningWithAStar-2017-10-29_23-57-15.xml" />
+    <entry file="file://$PROJECT_DIR$/LearningWithGA-2017-10-10_15-41-59.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-17227">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ch/idsia/evolution/Evolvable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ch/idsia/agents/LearningWithMC.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-922">
+          <caret line="20" column="13" lean-forward="false" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ch/idsia/agents/MCAgent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ch/idsia/agents/OwnGAAgent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3450">
+          <caret line="14" column="33" lean-forward="false" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LearningWithAStar-2017-10-30_00-12-55.xml" />
+    <entry file="file://$PROJECT_DIR$/LearningWithAStar-2017-10-30_00-07-50.xml" />
+    <entry file="file://$PROJECT_DIR$/LearningWithAStar-2017-10-30_00-22-53.xml" />
+    <entry file="jar:///Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/classes.jar!/java/lang/Object.class" />
+    <entry file="file://$PROJECT_DIR$/src/ch/idsia/agents/GAAgent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="176" column="36" lean-forward="false" selection-start-line="176" selection-start-column="36" selection-end-line="176" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LearningWithAStar-2017-10-30_03-11-06.xml" />
+    <entry file="file://$PROJECT_DIR$/LearningWithAStar-2017-10-30_03-11-39.xml" />
+    <entry file="file://$PROJECT_DIR$/LearningWithAStar-2017-10-30_00-35-21.xml" />
+    <entry file="file://$PROJECT_DIR$/LearningWithAStar-2017-10-30_03-14-15.xml" />
+    <entry file="jar:///Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/classes.jar!/java/lang/Cloneable.class" />
+    <entry file="file://$PROJECT_DIR$/src/ch/idsia/agents/LearningWithGA.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-30">
+          <caret line="54" column="30" lean-forward="false" selection-start-line="54" selection-start-column="30" selection-end-line="54" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ch/idsia/benchmark/mario/engine/sprites/Mario.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-12577">
+          <caret line="39" column="69" lean-forward="true" selection-start-line="39" selection-start-column="69" selection-end-line="39" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LearningWithAStar-2017-10-30_21-36-18.xml" />
+    <entry file="file://$PROJECT_DIR$/LearningWithAStar-2017-10-30_21-44-46.xml" />
+    <entry file="file://$PROJECT_DIR$/LearningWithAStar-2017-10-30_21-49-23.xml" />
+    <entry file="file://$PROJECT_DIR$/src/ch/idsia/tools/EvaluationInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="113" column="38" lean-forward="true" selection-start-line="113" selection-start-column="38" selection-end-line="113" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AStar-task4-2-clear-mini-2.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-787">
+          <caret line="3" column="12" lean-forward="true" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AStar-task3.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LearningWithAStar-2017-10-30_21-58-38.xml" />
+    <entry file="file://$PROJECT_DIR$/LearningWithGA-2017-10-10_15-42-02.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="1160" column="50" lean-forward="true" selection-start-line="1160" selection-start-column="50" selection-end-line="1160" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AStar-task4-3-150-Fire.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1492">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AStar-task4-3-clear-fire.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ch/idsia/agents/controllers/OwnAgentTask3.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="328">
+          <caret line="122" column="0" lean-forward="false" selection-start-line="122" selection-start-column="0" selection-end-line="122" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ch/idsia/agents/controllers/OwnAgentTask3Fireball.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="57" column="28" lean-forward="true" selection-start-line="57" selection-start-column="28" selection-end-line="57" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AStar-task2-clear.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ch/idsia/scenarios/champ/GamePlayTrack.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="267">
+          <caret line="47" column="19" lean-forward="false" selection-start-line="47" selection-start-column="19" selection-end-line="47" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ch/idsia/scenarios/champ/LearningTrack.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="112" column="41" lean-forward="false" selection-start-line="112" selection-start-column="41" selection-end-line="112" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ch/idsia/scenarios/oldscenarios/MainRun.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="107" column="94" lean-forward="false" selection-start-line="107" selection-start-column="94" selection-end-line="107" selection-end-column="94" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ch/idsia/scenarios/oldscenarios/Stats.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-195">
+          <caret line="37" column="13" lean-forward="false" selection-start-line="37" selection-start-column="13" selection-end-line="37" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AStar-task3-clear-fire.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="12" lean-forward="true" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AStar-task4-1-clear-fire-2.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AStar-task4-2-clear-mini-4.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ch/idsia/scenarios/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-221">
+          <caret line="41" column="19" lean-forward="false" selection-start-line="41" selection-start-column="19" selection-end-line="41" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ch/idsia/agents/AStarAgent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1440">
+          <caret line="99" column="42" lean-forward="false" selection-start-line="99" selection-start-column="42" selection-end-line="99" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ch/idsia/agents/LearningWithAStar.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="855">
+          <caret line="65" column="22" lean-forward="false" selection-start-line="65" selection-start-column="22" selection-end-line="65" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ch/idsia/scenarios/MainTask2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="61" column="0" lean-forward="false" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ch/idsia/scenarios/MainTask3.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="42" column="30" lean-forward="false" selection-start-line="42" selection-start-column="30" selection-end-line="42" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ch/idsia/scenarios/MainTask4_1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ch/idsia/scenarios/Play.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="735">
+          <caret line="76" column="0" lean-forward="false" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ch/idsia/scenarios/DifficultStage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="50" column="40" lean-forward="false" selection-start-line="50" selection-start-column="40" selection-end-line="50" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ch/idsia/scenarios/MainTask4_2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="42" column="44" lean-forward="false" selection-start-line="42" selection-start-column="44" selection-end-line="42" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ch/idsia/utils/wox/serial/Util.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="53" column="0" lean-forward="false" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ch/idsia/utils/wox/serial/EncodeBase64.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="34" lean-forward="true" selection-start-line="27" selection-start-column="34" selection-end-line="27" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ch/idsia/scenarios/MainTask4_3.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#2909#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>JDK10</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>marioAI</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>JDK10</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>org.testng:testng:6.10</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

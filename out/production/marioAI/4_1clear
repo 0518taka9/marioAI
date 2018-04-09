@@ -1,0 +1,30 @@
+[~ Mario AI ~] :LearningWithGA-2017-10-14_23-41-19.xml is not a class name; trying to load a wox definition with that name.
+[~ Mario AI ~] : agent = ch.idsia.agents.OwnGAAgent@462ba11b
+[~ Mario AI Benchmark ~ 0.1.9]
+
+[MarioAI] ~ Evaluation Results for Task: BasicTask
+        Evaluation lasted : 27588 ms
+         Weighted Fitness : 10074
+             Mario Status : WIN!
+               Mario Mode : FIRE
+Collisions with creatures : 0
+     Passed (Cells, Phys) : 256 of 256, 4096 of 4096 (100% passed)
+ Time Spent(marioseconds) : 44
+  Time Left(marioseconds) : 155
+             Coins Gained : 71 of 381 (18% collected)
+      Hidden Blocks Found : 0 of 0 (0% found)
+       Mushrooms Devoured : 0 of 0 found (0% collected)
+         Flowers Devoured : 0 of 5 found (0% collected)
+              kills Total : 51 of 135 found (37%)
+            kills By Fire : 30
+           kills By Shell : 0
+           kills By Stomp : 21
+    PunJ : 0
+
+ min = 30.0
+ max = 30.0
+ ave = 30.0
+ sd  = NaN
+ n   = 1
+
+Process finished with exit code 0
