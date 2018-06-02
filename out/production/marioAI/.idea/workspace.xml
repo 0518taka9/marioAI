@@ -2,201 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7b349e83-5731-4141-b751-308fed71bf44" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/ch/idsia/scenarios/DifficultStage.java" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/org_testng_testng_6_10.xml" afterPath="$PROJECT_DIR$/.idea/libraries/org_testng_testng_6_10.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/AStar-task3-clear-fire.xml" afterPath="$PROJECT_DIR$/AStar-task3-clear-fire.xml" />
-      <change beforePath="$PROJECT_DIR$/marioAI.iml" afterPath="$PROJECT_DIR$/marioAI.iml" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/agents/AStarAgent.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/agents/Agent.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/agents/AgentLoader.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/agents/AgentsPool.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/agents/AmiCoAgent.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/agents/BasicLearningAgent.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/agents/GAAgent.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/agents/KeyOfMC.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/agents/LearningAgent.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/agents/LearningWithAStar.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/agents/LearningWithGA.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/agents/LearningWithMC.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/agents/MCAgent.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/agents/MLPESLearningAgent.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/agents/OwnGAAgent.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/agents/SRNESLearningAgent.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/agents/SimpleAgent.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/agents/controllers/BasicMarioAIAgent.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/agents/controllers/ForwardAgent.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/agents/controllers/ForwardJumpingAgent.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/agents/controllers/IgnoreObstacleAgent.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/agents/controllers/OwnAgent.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/agents/controllers/OwnAgent3.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/agents/controllers/OwnAgentTask2.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/agents/controllers/OwnAgentTask3.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/agents/controllers/OwnAgentTask3Fireball.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/agents/controllers/RandomAgent.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/agents/controllers/ReplayAgent.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/agents/controllers/ScaredAgent.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/agents/controllers/ScaredShooty.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/agents/controllers/TimingAgent.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/agents/controllers/human/CheaterKeyboardAgent.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/agents/controllers/human/HumanKeyboardAgent.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/agents/learning/LargeMLPAgent.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/agents/learning/LargeSRNAgent.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/agents/learning/MediumMLPAgent.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/agents/learning/MediumSRNAgent.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/agents/learning/SRNAgent.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/agents/learning/SimpleMLPAgent.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/agents/learning/SmallMLPAgent.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/agents/learning/SmallSRNAgent.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/benchmark/experiments/EpisodicExperiment.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/benchmark/experiments/Experiment.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/benchmark/mario/engine/Art.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/benchmark/mario/engine/BgRenderer.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/benchmark/mario/engine/GeneralizerEnemies.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/benchmark/mario/engine/GeneralizerLevelScene.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/benchmark/mario/engine/GlobalOptions.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/benchmark/mario/engine/LevelRenderer.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/benchmark/mario/engine/LevelScene.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/benchmark/mario/engine/MarioVisualComponent.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/benchmark/mario/engine/Recorder.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/benchmark/mario/engine/Replayer.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/benchmark/mario/engine/level/BgLevelGenerator.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/benchmark/mario/engine/level/ImprovedNoise.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/benchmark/mario/engine/level/Level$objCounters.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/benchmark/mario/engine/level/Level.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/benchmark/mario/engine/level/LevelGenerator.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/benchmark/mario/engine/level/SpriteTemplate.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/benchmark/mario/engine/mapedit/LevelEditView.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/benchmark/mario/engine/mapedit/LevelEditor$1.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/benchmark/mario/engine/mapedit/LevelEditor.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/benchmark/mario/engine/mapedit/TilePicker.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/benchmark/mario/engine/sprites/BulletBill.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/benchmark/mario/engine/sprites/CoinAnim.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/benchmark/mario/engine/sprites/Enemy.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/benchmark/mario/engine/sprites/FireFlower.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/benchmark/mario/engine/sprites/Fireball.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/benchmark/mario/engine/sprites/FlowerEnemy.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/benchmark/mario/engine/sprites/GreenMushroom.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/benchmark/mario/engine/sprites/Mario.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/benchmark/mario/engine/sprites/Mushroom.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/benchmark/mario/engine/sprites/Particle.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/benchmark/mario/engine/sprites/Princess.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/benchmark/mario/engine/sprites/Shell.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/benchmark/mario/engine/sprites/Sparkle.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/benchmark/mario/engine/sprites/Sprite.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/benchmark/mario/engine/sprites/SpriteContext.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/benchmark/mario/engine/sprites/WaveGoomba.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/benchmark/mario/environments/Environment.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/benchmark/mario/environments/MarioEnvironment.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/benchmark/mario/simulation/AmiCoSimulator.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/benchmark/mario/simulation/SimulationOptions.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/benchmark/tasks/BasicTask.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/benchmark/tasks/GamePlayTask.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/benchmark/tasks/LearningTask.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/benchmark/tasks/MarioCustomSystemOfValues.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/benchmark/tasks/MarioSystemOfValues$timeLengthMapping.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/benchmark/tasks/MarioSystemOfValues.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/benchmark/tasks/MultiDifficultyProgressTask.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/benchmark/tasks/MultiSeedProgressTask.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/benchmark/tasks/MushroomTask.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/benchmark/tasks/ProgressTask.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/benchmark/tasks/ReplayTask.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/benchmark/tasks/SystemOfValues.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/benchmark/tasks/Task.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/evolution/EA.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/evolution/Evolvable.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/evolution/FA.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/evolution/MLP.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/evolution/SRN.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/evolution/ea/ES.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/scenarios/Custom.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/scenarios/Main.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/scenarios/Main3.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/scenarios/MainOwn.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/scenarios/MainTask2.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/scenarios/MainTask3.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/scenarios/MainTask4_1.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/scenarios/MainTask4_2.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/scenarios/MainTask4_3.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/scenarios/Play.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/scenarios/Replay.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/scenarios/champ/GamePlayTrack.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/scenarios/champ/LearningTrack.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/scenarios/champ/LearningTrackMC.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/scenarios/champ/TuringTestTrack.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/scenarios/oldscenarios/CompetitionScore.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/scenarios/oldscenarios/Evolve.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/scenarios/oldscenarios/EvolveIncrementally.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/scenarios/oldscenarios/EvolveMultiSeed.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/scenarios/oldscenarios/GeneralScenario.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/scenarios/oldscenarios/MainRun.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/scenarios/oldscenarios/Stats.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/scenarios/test/EvaluateJLink.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/scenarios/test/EvolveSingle.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/scenarios/test/EvolveWithChangingSeeds.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/scenarios/test/PaperEvolve.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/scenarios/test/PaperEvolveBatch.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/scenarios/test/PlayJLink.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/scenarios/test/StatsJLink.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/scenarios/test/StochasticityTest.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/tools/EvaluationInfo.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/tools/EvaluationInfoStatisticalSummary.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/tools/Evaluator.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/tools/GameViewer$1.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/tools/GameViewer$GameViewerActions.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/tools/GameViewer$GameViewerView.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/tools/GameViewer.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/tools/MarioAIOptions.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/tools/RandomCreatureGenerator.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/tools/ReplayerOptions$Interval.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/tools/ReplayerOptions.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/tools/Scale2x.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/tools/StateEncoderDecoder.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/tools/ToolsConfigurator$INTERFACE_TYPE.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/tools/ToolsConfigurator$ToolsConfiguratorActions.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/tools/ToolsConfigurator.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/tools/amico/AmiCoJavaPy.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/tools/punj/PunctualJudge.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/unittests/CmdLineOptionsTest.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/unittests/LevelGeneratorTest.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/unittests/LevelSceneTest.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/unittests/MarioAIBenchmarkTest.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/unittests/MarioEnvironmentTest.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/utils/ErrorCodes.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/utils/MathX.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/utils/ParameterContainer.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/utils/statistics/StatisticalSummary$Watch.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/utils/statistics/StatisticalSummary.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/utils/statistics/StatisticalTests.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/utils/statistics/Stats.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/utils/wox/serial/AccessTest$Sub.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/utils/wox/serial/AccessTest$Super.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/utils/wox/serial/AccessTest.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/utils/wox/serial/ArrayListTest.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/utils/wox/serial/Easy.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/utils/wox/serial/EasyTest.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/utils/wox/serial/EncodeBase64.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/utils/wox/serial/ObjectReader.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/utils/wox/serial/ObjectWriter.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/utils/wox/serial/ReadTest.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/utils/wox/serial/Serial.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/utils/wox/serial/ShadowTest$X.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/utils/wox/serial/ShadowTest$Y.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/utils/wox/serial/ShadowTest.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/utils/wox/serial/SimpleReader.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/utils/wox/serial/SimpleWriter.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/utils/wox/serial/TestObject$Inner.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/utils/wox/serial/TestObject.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/utils/wox/serial/Util.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/marioAI/ch/idsia/utils/wox/serial/WriterTest.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/ch/idsia/agents/AStarAgent.java" afterPath="$PROJECT_DIR$/src/ch/idsia/agents/AStarAgent.java" />
-      <change beforePath="$PROJECT_DIR$/src/ch/idsia/agents/LearningWithAStar.java" afterPath="$PROJECT_DIR$/src/ch/idsia/agents/LearningWithAStar.java" />
-      <change beforePath="$PROJECT_DIR$/src/ch/idsia/scenarios/MainTask2.java" afterPath="$PROJECT_DIR$/src/ch/idsia/scenarios/MainTask2.java" />
-      <change beforePath="$PROJECT_DIR$/src/ch/idsia/scenarios/MainTask3.java" afterPath="$PROJECT_DIR$/src/ch/idsia/scenarios/MainTask3.java" />
-      <change beforePath="$PROJECT_DIR$/src/ch/idsia/scenarios/MainTask4_2.java" afterPath="$PROJECT_DIR$/src/ch/idsia/scenarios/MainTask4_2.java" />
       <change beforePath="$PROJECT_DIR$/src/ch/idsia/scenarios/MainTask4_3.java" afterPath="$PROJECT_DIR$/src/ch/idsia/scenarios/MainTask4_3.java" />
-      <change beforePath="$PROJECT_DIR$/src/ch/idsia/utils/wox/serial/EncodeBase64.java" afterPath="$PROJECT_DIR$/src/ch/idsia/utils/wox/serial/EncodeBase64.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -224,10 +31,9 @@
       <file leaf-file-name="MainTask4_3.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/ch/idsia/scenarios/MainTask4_3.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+            <state relative-caret-position="245">
+              <caret line="19" column="42" lean-forward="false" selection-start-line="19" selection-start-column="42" selection-end-line="19" selection-end-column="42" />
               <folding>
-                <element signature="e#0#2909#0" expanded="true" />
                 <element signature="imports" expanded="true" />
               </folding>
             </state>
@@ -291,8 +97,8 @@
       <file leaf-file-name="LearningWithAStar.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ch/idsia/agents/LearningWithAStar.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="855">
-              <caret line="65" column="22" lean-forward="false" selection-start-line="65" selection-start-column="22" selection-end-line="65" selection-end-column="22" />
+            <state relative-caret-position="17">
+              <caret line="93" column="28" lean-forward="true" selection-start-line="93" selection-start-column="28" selection-end-line="93" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -381,12 +187,12 @@
         <option value="$PROJECT_DIR$/src/ch/idsia/scenarios/MainTask4_1.java" />
         <option value="$PROJECT_DIR$/AStar-task3-clear-fire.xml" />
         <option value="$PROJECT_DIR$/src/ch/idsia/agents/AStarAgent.java" />
-        <option value="$PROJECT_DIR$/src/ch/idsia/scenarios/MainTask4_3.java" />
         <option value="$PROJECT_DIR$/src/ch/idsia/agents/LearningWithAStar.java" />
         <option value="$PROJECT_DIR$/src/ch/idsia/scenarios/DifficultStage.java" />
         <option value="$PROJECT_DIR$/src/ch/idsia/scenarios/MainTask2.java" />
         <option value="$PROJECT_DIR$/src/ch/idsia/scenarios/MainTask4_2.java" />
         <option value="$PROJECT_DIR$/src/ch/idsia/scenarios/MainTask3.java" />
+        <option value="$PROJECT_DIR$/src/ch/idsia/scenarios/MainTask4_3.java" />
       </list>
     </option>
   </component>
@@ -479,11 +285,21 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane" />
-      <pane id="AndroidView" />
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="PackagesPane" />
+      <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="marioAI" type="b2602c69:ProjectViewProjectNode" />
+              <item name="marioAI" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1049,43 +865,45 @@
       <workItem from="1523275443744" duration="790000" />
       <workItem from="1523276286758" duration="196000" />
       <workItem from="1523276521168" duration="354000" />
-      <workItem from="1523276901710" duration="293000" />
+      <workItem from="1523276901710" duration="875000" />
+      <workItem from="1523553683412" duration="76000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="259630000" />
+    <option name="totallyTimeSpent" value="260288000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.268" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.58433735" sideWeight="0.5028612" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.48637316" sideWeight="0.49713877" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4871287" sideWeight="0.49713877" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32914045" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20119047" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20879121" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24973376" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.268" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32736573" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -1335,58 +1153,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ch/idsia/agents/LearningWithAStar.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="855">
-          <caret line="65" column="22" lean-forward="false" selection-start-line="65" selection-start-column="22" selection-end-line="65" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ch/idsia/scenarios/MainTask2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="61" column="0" lean-forward="false" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ch/idsia/scenarios/MainTask3.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="42" column="30" lean-forward="false" selection-start-line="42" selection-start-column="30" selection-end-line="42" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ch/idsia/scenarios/MainTask4_1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ch/idsia/scenarios/Play.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="735">
-          <caret line="76" column="0" lean-forward="false" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ch/idsia/scenarios/DifficultStage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="50" column="40" lean-forward="false" selection-start-line="50" selection-start-column="40" selection-end-line="50" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ch/idsia/scenarios/MainTask4_2.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -1409,12 +1175,63 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/ch/idsia/scenarios/Play.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="735">
+          <caret line="76" column="0" lean-forward="false" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ch/idsia/scenarios/MainTask2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="61" column="0" lean-forward="false" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ch/idsia/scenarios/DifficultStage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="50" column="40" lean-forward="false" selection-start-line="50" selection-start-column="40" selection-end-line="50" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ch/idsia/scenarios/MainTask4_1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ch/idsia/scenarios/MainTask3.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="42" column="30" lean-forward="false" selection-start-line="42" selection-start-column="30" selection-end-line="42" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ch/idsia/agents/LearningWithAStar.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="93" column="28" lean-forward="true" selection-start-line="93" selection-start-column="28" selection-end-line="93" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/ch/idsia/scenarios/MainTask4_3.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+        <state relative-caret-position="245">
+          <caret line="19" column="42" lean-forward="false" selection-start-line="19" selection-start-column="42" selection-end-line="19" selection-end-column="42" />
           <folding>
-            <element signature="e#0#2909#0" expanded="true" />
             <element signature="imports" expanded="true" />
           </folding>
         </state>
