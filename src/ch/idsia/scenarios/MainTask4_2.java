@@ -50,7 +50,7 @@ public final class MainTask4_2 {
 //        AgentsPool.addAgent(AgentsPool.loadAgent("AStar-task4-2-clear-mini-2.xml", false));   //6430
 //        AgentsPool.addAgent(AgentsPool.loadAgent("AStar-task4-2-clear-mini-3.xml", false));   //6272
 //        AgentsPool.addAgent(AgentsPool.loadAgent("AStar-task4-2-clear-mini-4.xml", false));   //6444
-        AgentsPool.addAgent(AgentsPool.loadAgent("AStar-task4-2-clear-fire.xml", false));   //6420
+        AgentsPool.addAgent(AgentsPool.loadAgent("/Users/taka/marioAI/results/AStar-task4-2-clear-fire.xml", false));   //6420
         Agent agent = AgentsPool.getCurrentAgent();
         marioAIOptions.setAgent(agent);
 

@@ -39,7 +39,7 @@ public final class DifficultStage {
     public static void main(String[] args) {
         final MarioAIOptions marioAIOptions = new MarioAIOptions(args);
 
-        AgentsPool.addAgent(AgentsPool.loadAgent("AStar-difficultstage-99-99-clear.xml", false));
+        AgentsPool.addAgent(AgentsPool.loadAgent("/Users/taka/marioAI/results/AStar-difficultstage-99-99-clear.xml", false));
 //        AgentsPool.addAgent(AgentsPool.loadAgent("AStar-difficultstage-999-999-clear.xml", false));
 //        AgentsPool.addAgent(AgentsPool.loadAgent("AStar-difficultstage-9999-9999-clear.xml", false));
 //        AgentsPool.addAgent(AgentsPool.loadAgent("AStar-difficultstage-99999-99999-clear.xml", false));

@@ -17,7 +17,7 @@
  * AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
  * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.
  * IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT,
- * INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT
+ * INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT
  * NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
  * PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
  * WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
@@ -42,7 +42,7 @@ public final class MainTask4_3 {
 
 //        AgentsPool.addAgent(AgentsPool.loadAgent("AStar-task4-3-clear-mini.xml", false));   //9480
 //        AgentsPool.addAgent(AgentsPool.loadAgent("AStar-task4-3-clear-fire.xml", false));  //9656
-        AgentsPool.addAgent(AgentsPool.loadAgent("AStar-task4-3-clear-fire-2.xml", false)); //10276
+        AgentsPool.addAgent(AgentsPool.loadAgent("/Users/taka/marioAI/results/AStar-task4-3-clear-fire-2.xml", false)); //10276
         Agent agent = AgentsPool.getCurrentAgent();
 
         marioAIOptions.setAgent(agent);

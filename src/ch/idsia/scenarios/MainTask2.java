@@ -47,7 +47,7 @@ public final class MainTask2 {
 
 //        final Agent agent = new IgnoreObstacleAgent();
         final Agent agent = new OwnAgentTask2();
-//        AgentsPool.addAgent(AgentsPool.loadAgent("LearningWithAStar-2017-10-30_00-32-19.xml", false));
+//        AgentsPool.addAgent(AgentsPool.loadAgent("/Users/taka/marioAI/results/LearningWithAStar-2017-10-30_00-32-19.xml", false));
 //        Agent agent = AgentsPool.getCurrentAgent();
         marioAIOptions.setAgent(agent);
 

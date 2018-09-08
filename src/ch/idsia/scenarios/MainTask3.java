@@ -47,7 +47,7 @@ public final class MainTask3 {
         final Agent agent = new OwnAgentTask3();
 //        final Agent agent = new OwnAgentTask3Fireball();
 //        AgentsPool.addAgent(AgentsPool.loadAgent("AStar-task3.xml", false));    //9436
-//        AgentsPool.addAgent(AgentsPool.loadAgent("AStar-task3-clear-fire.xml", false)); //9902
+//        AgentsPool.addAgent(AgentsPool.loadAgent("/Users/taka/marioAI/results/AStar-task3-clear-fire.xml", false)); //9902
 //        Agent agent = AgentsPool.getCurrentAgent();
 
         marioAIOptions.setAgent(agent);
